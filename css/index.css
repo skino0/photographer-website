@@ -62,8 +62,6 @@ body {
 
 }
 
-
-
 @keyframes headerjoin {
     0%{
         opacity:0;
@@ -177,10 +175,8 @@ body {
 
 
 #about-container {
-    position:absolute;
     width:100vw;
     height:100vh;
     background:#000;
-    top:100%;    
 }
 
