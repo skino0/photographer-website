@@ -57,14 +57,7 @@ img {vertical-align: middle;}
 
 /* The dots/bullets/indicators */
 .dot {
-    height: 15px;
-    width: 15px;
-    margin: 0 4px;
-    background-color: #bbb;
-    box-shadow:0px 0px 2px 1.4px rgb(5, 5, 5);
-    border-radius: 50%;
-    display: inline-block;
-    transition: background-color 0.8s ease;
+    display:none;
 }
 
 .active {

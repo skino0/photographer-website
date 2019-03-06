@@ -17,7 +17,7 @@
     padding:50px 10px 10px 10px;
     user-select:none;-webkit-user-select:none;-moz-user-select:none;-o-user-select:none;-ms-user-select:none;
     opacity:0;
-    animation-delay:2s!important;
+    animation-delay:1.5s!important;
     animation:navjoin .5s forwards;
 }
 
@@ -42,12 +42,12 @@
     font-family: 'Montserrat', sans-serif;
     letter-spacing:2.5px;
     opacity:0;
-    animation:secnavjoin .2s forwards;
+    animation:secnavjoin .35s forwards;
 }
 
 @keyframes secnavjoin {
     0% {
-        filter:blur(500px);
+        filter:blur(40px);
         opacity:0;
     }
 
