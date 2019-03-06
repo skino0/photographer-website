@@ -1,0 +1,62 @@
+
+:root {
+    --aboutmesize:calc(20px*8px);
+
+}
+#navbar {
+    top:0%;
+    right:0%;
+}
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+.navitem {
+    color:#fff;
+    font-family: 'Montserrat', sans-serif;
+    font-size:30px;
+    letter-spacing:5px;
+    text-shadow:-0.5px -0.5px 0px #000,
+    0.5px 0.5px 0px #000;
+    transition-duration:.5s;
+    padding:10px;
+    
+}
+
+.navitem:hover {
+    cursor:pointer;
+    transition-duration:.4s;
+    letter-spacing:3.2px;
+    background-color:rgba(0,0,0,.55);
+    padding:8px 15px 8px 15px;
+}
+
+.navitem:first-child {
+    position:absolute;
+    top:65%;
+    left:40%;
+    transform:translate(-40%,-65%);
+    z-index:7;
+}
+
+.navitem:nth-child(2) {
+    position:absolute;
+    top:65%;
+    right:40%;
+    transform:translate(40%,-65%);
+    z-index:7;
+}
+
+.navitem:nth-child(3) {
+    position:absolute;
+    top:72%;
+    right:50%;
+    transform:translate(50%,-72%);
+    z-index:7;
+}
+
+#line1 {
+    position:absolute;
+    background:#000;
+    height:4px;
+    width:var(--aboutmesize);
+
+
+}
