@@ -23,9 +23,9 @@ function handle(delta) {
 
 
 //nav scroll scripts
-/*
+
 $("#aboutme").click(function() {
     $('html,body').animate({
         scrollTop: $("#about-container").offset().top},
         'slow');
-});*/
+});
