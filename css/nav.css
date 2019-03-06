@@ -4,8 +4,6 @@
 
 }
 
-
-
 @import url('https://fonts.googleapis.com/css?family=Montserrat');
 /*deffault styles = id's*/
 #aboutme,#work,#contact {
@@ -16,9 +14,25 @@
     text-shadow:-0.5px -0.5px 0px #000,
     0.5px 0.5px 0px #000;
     transition-duration:.5s;
-    padding:10px;
+    padding:50px 10px 10px 10px;
     user-select:none;-webkit-user-select:none;-moz-user-select:none;-o-user-select:none;-ms-user-select:none;
+    opacity:0;
+    animation-delay:2s!important;
+    animation:navjoin .5s forwards;
 }
+
+@keyframes navjoin {
+    0%{
+        opacity:0;
+        padding-top:50px;
+    }
+
+    100%{
+        opacity:1;
+        padding-top:10px;
+    }
+}
+
 /*active nav elems - changed - already clicked*/
 #about.active,#wo.active,#co.active {
     background-color:transparent!important;
@@ -26,6 +40,21 @@
     font-size:15px;
     color:#fff;
     font-family: 'Montserrat', sans-serif;
+    letter-spacing:2.5px;
+    opacity:0;
+    animation:secnavjoin .2s forwards;
+}
+
+@keyframes secnavjoin {
+    0% {
+        filter:blur(500px);
+        opacity:0;
+    }
+
+    100% {
+        filter:blur(0px);
+        opacity:1;
+    }
 }
 
 #aboutme:hover,#work:hover,#contact:hover {
@@ -84,11 +113,11 @@
     z-index:7;
 }
 
-#line1 {
-    position:absolute;
-    background:#000;
-    height:4px;
-    width:var(--aboutmesize);
-
-
+#about:hover,#wo:hover,#co:hover {
+    cursor:pointer;
+    transition-duration:.4s;
+    color:#ccc;
+    
 }
+
+
