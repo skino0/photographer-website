@@ -3,10 +3,7 @@
     --aboutmesize:calc(20px*8px);
 
 }
-#navbar {
-    top:0%;
-    right:0%;
-}
+
 @import url('https://fonts.googleapis.com/css?family=Montserrat');
 .navitem {
     color:#fff;
@@ -17,8 +14,17 @@
     0.5px 0.5px 0px #000;
     transition-duration:.5s;
     padding:10px;
-    
+    user-select:none;-webkit-user-select:none;-moz-user-select:none;-o-user-select:none;-ms-user-select:none;
 }
+
+.navitem.navactive {
+    background-color:transparent!important;
+    padding:0;
+    font-size:15px;
+    color:#fff;
+}
+
+
 
 .navitem:hover {
     cursor:pointer;
@@ -36,6 +42,14 @@
     z-index:7;
 }
 
+.navitem:first-child.active1 {
+    position:fixed;
+    top:5%!important;
+    right:20%;
+    transform:translate(20%,0%);
+    z-index:7;
+}
+
 .navitem:nth-child(2) {
     position:absolute;
     top:65%;
@@ -44,11 +58,27 @@
     z-index:7;
 }
 
+.navitem:nth-child(2).active2 {
+    position:fixed!important;
+    top:5%;
+    right:10%;
+    transform:translate(10%,0%);
+    z-index:7;
+}
+
 .navitem:nth-child(3) {
     position:absolute;
-    top:72%;
+    top:74%;
     right:50%;
-    transform:translate(50%,-72%);
+    transform:translate(50%,-74%);
+    z-index:7;
+}
+
+.navitem:nth-child(3).active3 {
+    position:fixed!important;
+    top:5%;
+    right:5%;
+    transform:translate(5%,0%);
     z-index:7;
 }
 

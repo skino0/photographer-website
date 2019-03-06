@@ -8,7 +8,7 @@ font-family: 'Font Awesome\ 5 Free';
 }
 html {
     overflow-x:hidden;
-    overflow-y:hidden;
+    scroll-behavior: smooth;
 
 }
 body {
@@ -174,3 +174,13 @@ body {
         filter:blur(0px);
     }
 }
+
+
+#about-container {
+    position:absolute;
+    width:100vw;
+    height:100vh;
+    background:#000;
+    top:100%;    
+}
+
