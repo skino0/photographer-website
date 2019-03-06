@@ -4,8 +4,11 @@
 
 }
 
+
+
 @import url('https://fonts.googleapis.com/css?family=Montserrat');
-.navitem {
+/*deffault styles = id's*/
+#aboutme,#work,#contact {
     color:#fff;
     font-family: 'Montserrat', sans-serif;
     font-size:30px;
@@ -16,17 +19,16 @@
     padding:10px;
     user-select:none;-webkit-user-select:none;-moz-user-select:none;-o-user-select:none;-ms-user-select:none;
 }
-
-.navitem.navactive {
+/*active nav elems - changed - already clicked*/
+#about.active,#wo.active,#co.active {
     background-color:transparent!important;
     padding:0;
     font-size:15px;
     color:#fff;
+    font-family: 'Montserrat', sans-serif;
 }
 
-
-
-.navitem:hover {
+#aboutme:hover,#work:hover,#contact:hover {
     cursor:pointer;
     transition-duration:.4s;
     letter-spacing:3.2px;
@@ -34,23 +36,23 @@
     padding:8px 15px 8px 15px;
 }
 
-.navitem:first-child {
+#aboutme{
     position:absolute;
     top:65%;
     left:40%;
     transform:translate(-40%,-65%);
     z-index:7;
 }
-
-.navitem:first-child.active1 {
+/*after click aboutme*/
+#about {
     position:fixed;
-    top:5%!important;
-    right:20%;
-    transform:translate(20%,0%);
+    top:5%;
+    right:25%!important;
+    transform:translate(25%,5%)!important;
     z-index:7;
 }
 
-.navitem:nth-child(2) {
+#work {
     position:absolute;
     top:65%;
     right:40%;
@@ -58,15 +60,15 @@
     z-index:7;
 }
 
-.navitem:nth-child(2).active2 {
+#wo {
     position:fixed!important;
     top:5%;
-    right:10%;
-    transform:translate(10%,0%);
+    right:15%;
+    transform:translate(15%,0%);
     z-index:7;
 }
 
-.navitem:nth-child(3) {
+#contact {
     position:absolute;
     top:74%;
     right:50%;
@@ -74,7 +76,7 @@
     z-index:7;
 }
 
-.navitem:nth-child(3).active3 {
+#co {
     position:fixed!important;
     top:5%;
     right:5%;
