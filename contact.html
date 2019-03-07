@@ -6,8 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <!--General Reset-->
     <link rel="stylesheet" type="text/css" href="css/reset.css">
-    <link rel="stylesheet" type="text/css" href="css/contact/contact.css">
-
+    <link rel="stylesheet" type="text/css" href="css/contact/index.css">
+    <link rel="stylesheet" type="text/css" href="css/contact/form.css">
 
     <!--Font Awesome-->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css">
@@ -16,10 +16,21 @@
 </head>
 <body>
 
-    <div id="bg"></div>
-
-    
+    <img id="bg" draggable="false" onmousedown="return false;"></div>
+    <div id="ydt-header">YourDopeTherapy</div>
+    <div id="ydt-copy">YourDopeTherapy</div>
+    <div id="line1"></div>
+    <form id="contact-f">
+        <input id="name" type="text" placeholder="NAME" autocomplete="off"
+        maxlength="20" minlength="4" required/>
+        <input id="email" type="email" placeholder="EMAIL"autocomplete="off"
+        maxlength="30" minlength="5" required/>
+        <textarea id="textarea" placeholder="Type anything you want from me!" required></textarea>
+        <input id="submit" type="submit" value="SUBMIT"/>
+    </form>
 
 </body>
 <script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/contact/form.js"></script>
+
 </html>
