@@ -12,6 +12,12 @@ $("#work,#wo").click(function() {
         'slow');
 });
 
+$("#contact,#co").click(function() {
+    $('html,body').animate({
+        scrollTop: $("#container-fourth").offset().top},
+        'slow');
+});
+
 
 /*experiment*/
 /*
