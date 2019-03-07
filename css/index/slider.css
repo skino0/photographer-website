@@ -19,24 +19,39 @@ img {vertical-align: middle;}
     width:100%;    
     /*ZINDEX*/
     z-index:-1;
-    animation-delay:1.9s!important;
-    animation:sliderjoin .5s forwards;
     opacity:0;
     filter:blur(80px);
+    animation-delay:1.9s!important;
+    animation:sliderjoin .5s forwards;
+    -webkit-animation-delay:1.9s!important;
+    -webkit-animation:sliderjoin .5s forwards;
+    -moz-animation-delay:1.9s!important;
+    -moz-animation:sliderjoin .5s forwards;
+    -ms-animation-delay:1.9s!important;
+    -ms-animation:sliderjoin .5s forwards;
+    -o-animation-delay:1.9s!important;
+    -o-animation:sliderjoin .5s forwards;
 }
 
 @keyframes sliderjoin {
-    0%{
-        opacity:0;
-        filter:blur(200px);
-
-    }
-
-    100%{
-        opacity:1;
-        filter:blur(0px);
-
-    }
+    0%{opacity:0;filter:blur(200px);}
+    100%{opacity:1;filter:blur(0px);}
+}
+@-webkit-keyframes sliderjoin {
+    0%{opacity:0;filter:blur(200px);}
+    100%{opacity:1;filter:blur(0px);}
+}
+@-moz-keyframes sliderjoin {
+    0%{opacity:0;filter:blur(200px);}
+    100%{opacity:1;filter:blur(0px);}
+}
+@-ms-keyframes sliderjoin {
+    0%{opacity:0;filter:blur(200px);}
+    100%{opacity:1;filter:blur(0px);}
+}
+@-o-keyframes sliderjoin {
+    0%{opacity:0;filter:blur(200px);}
+    100%{opacity:1;filter:blur(0px);}
 }
 
 .slideshow-container img {width:100%;}
@@ -66,30 +81,45 @@ img {vertical-align: middle;}
     background-color: #ccc;
 }
 
-@keyframes dot {
-    0% {
-        transform:scale(1);
-    }
-    50% {
-        transform:scale(1.8);
-
-    }
-    100% {
-        transform:scale(1);
-
-    }
-
-
-}
 /* Fading animation */
 .fade {
-    -webkit-animation-name: fade;
-    -webkit-animation-duration: 5.5s;
     animation-name: fade;
     animation-duration: 5.5s;
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 5.5s;
+    -moz-animation-name: fade;
+    -moz-animation-duration: 5.5s;
+    -ms-animation-name: fade;
+    -ms-animation-duration: 5.5s;
+    -o-animation-name: fade;
+    -o-animation-duration: 5.5s;
 }
 
 @keyframes fade {
+    0% {opacity: 0;} 
+    50% {opacity: 1;}
+    90%{opacity: 1;}
+    100%{opacity: 0;}
+}
+@-webkit-keyframes fade {
+    0% {opacity: 0;} 
+    50% {opacity: 1;}
+    90%{opacity: 1;}
+    100%{opacity: 0;}
+}
+@-moz-keyframes fade {
+    0% {opacity: 0;} 
+    50% {opacity: 1;}
+    90%{opacity: 1;}
+    100%{opacity: 0;}
+}
+@-ms-keyframes fade {
+    0% {opacity: 0;} 
+    50% {opacity: 1;}
+    90%{opacity: 1;}
+    100%{opacity: 0;}
+}
+@-o-keyframes fade {
     0% {opacity: 0;} 
     50% {opacity: 1;}
     90%{opacity: 1;}
@@ -105,8 +135,6 @@ img {vertical-align: middle;}
 
 }
 
-
-/* On smaller screens, decrease text size */
 @media only screen and (max-width: 300px) {
   .text {font-size: 11px}
 }

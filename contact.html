@@ -20,12 +20,13 @@
     <div id="ydt-header">YourDopeTherapy</div>
     <div id="ydt-copy">YourDopeTherapy</div>
     <div id="line1"></div>
-    <form id="contact-f">
+    <form id="contact-f" method="POST" action="sended.html.php">
+        <!--min maxlength removed and required for this time-->
         <input id="name" type="text" placeholder="NAME" autocomplete="off"
-        maxlength="20" minlength="4" required/>
+       />
         <input id="email" type="email" placeholder="EMAIL"autocomplete="off"
-        maxlength="30" minlength="5" required/>
-        <textarea id="textarea" placeholder="Type anything you want from me!" required></textarea>
+        />
+        <textarea id="textarea" placeholder="Type anything you want from me!"></textarea>
         <input id="submit" type="submit" value="SUBMIT"/>
     </form>
 

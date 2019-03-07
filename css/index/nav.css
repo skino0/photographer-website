@@ -1,7 +1,6 @@
 
 :root {
     --aboutmesize:calc(20px*8px);
-
 }
 
 @import url('https://fonts.googleapis.com/css?family=Montserrat');
@@ -15,23 +14,35 @@
     0.5px 0.5px 0px #000;
     transition-duration:.5s;
     padding:50px 10px 10px 10px;
-    user-select:none;-webkit-user-select:none;-moz-user-select:none;-o-user-select:none;-ms-user-select:none;
+    user-select:none!important;-webkit-user-select:none!important;-moz-user-select:none!important;-o-user-select:none!important;-ms-user-select:none!important;
     opacity:0;
     animation-delay:1.5s!important;
     animation:navjoin .5s forwards;
+    -webkit-animation-delay:1.5s!important;
+    -webkit-animation:navjoin .5s forwards;
+    -moz-animation-delay:1.5s!important;
+    -moz-animation:navjoin .5s forwards;
+    -ms-animation-delay:1.5s!important;
+    -ms-animation:navjoin .5s forwards;
+    -o-animation-delay:1.5s!important;
+    -o-animation:navjoin .5s forwards;
 }
 
 @keyframes navjoin {
-    0%{
-        opacity:0;
-        padding-top:50px;
-    }
-
-    100%{
-        opacity:1;
-        padding-top:10px;
-    }
-}
+0%{opacity:0;padding-top:50px;}
+100%{opacity:1;padding-top:10px;}}
+@-webkit-keyframes navjoin {
+0%{opacity:0;padding-top:50px;}
+100%{opacity:1;padding-top:10px;}}
+@-moz-keyframes navjoin {
+0%{opacity:0;padding-top:50px;}
+100%{opacity:1;padding-top:10px;}}
+@-ms-keyframes navjoin {
+0%{opacity:0;padding-top:50px;}
+100%{opacity:1;padding-top:10px;}}
+@-o-keyframes navjoin {
+0%{opacity:0;padding-top:50px;}
+100%{opacity:1;padding-top:10px;}}
 
 /*active nav elems - changed - already clicked*/
 #about.active,#wo.active,#co.active {
@@ -43,19 +54,27 @@
     letter-spacing:2.5px;
     opacity:0;
     animation:secnavjoin .35s forwards;
+    -webkit-animation:secnavjoin .35s forwards;
+    -moz-animation:secnavjoin .35s forwards;
+    -ms-animation:secnavjoin .35s forwards;
+    -o-animation:secnavjoin .35s forwards;
 }
 
 @keyframes secnavjoin {
-    0% {
-        filter:blur(40px);
-        opacity:0;
-    }
-
-    100% {
-        filter:blur(0px);
-        opacity:1;
-    }
-}
+0% {filter:blur(40px);opacity:0;}
+100% {filter:blur(0px);opacity:1;}}
+@-webkit-keyframes secnavjoin {
+0% {filter:blur(40px);opacity:0;}
+100% {filter:blur(0px);opacity:1;}}
+@-moz-keyframes secnavjoin {
+0% {filter:blur(40px);opacity:0;}
+100% {filter:blur(0px);opacity:1;}}
+@-ms-keyframes secnavjoin {
+0% {filter:blur(40px);opacity:0;}
+100% {filter:blur(0px);opacity:1;}}
+@-o-keyframes secnavjoin {
+0% {filter:blur(40px);opacity:0;}
+100% {filter:blur(0px);opacity:1;}}
 
 #aboutme:hover,#work:hover,#contact:hover {
     cursor:pointer;

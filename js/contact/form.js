@@ -1,16 +1,19 @@
 
-
+//clicked classes
 $("#name").click(function(){
-    $("#name").addClass('clicked');
+    $(this).addClass('clicked');
 });
 
 $("#email").click(function(){
-    $("#email").addClass('clicked');
+    $(this).addClass('clicked');
 });
 
-
-
-
-$('#search').keypress(function(e){
-
+$("#textarea").click(function(){
+    $(this).addClass('clicked');
 });
+
+//submit clicked
+$("#submit").click(function(){
+    $("#contact-f").addClass('leave');
+});
+

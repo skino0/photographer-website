@@ -1,21 +1,44 @@
 #contact-f {
     margin:0;
-    padding:0;}/*
+    padding:0;
     opacity:0;
     animation-delay:1.7s!important;
     animation:formjoin 1s forwards;
+    -webkit-animation-delay:1.7s!important;
+    -webkit-animation:formjoin 1s forwards;
+    -moz-animation-delay:1.7s!important;
+    -moz-animation:formjoin 1s forwards;
+    -ms-animation-delay:1.7s!important;
+    -ms-animation:formjoin 1s forwards;
+    -o-animation-delay:1.7s!important;
+    -o-animation:formjoin 1s forwards;
 }
 
 @keyframes formjoin {
-    0%{
-        opacity:0;
-    }
+    0%{opacity:0;}
+    100%{opacity:1;}
+}
+@-webkit-keyframes formjoin {
+    0%{opacity:0;}
+    100%{opacity:1;}
+}
+@-moz-keyframes formjoin {
+    0%{opacity:0;}
+    100%{opacity:1;}
+}
+@-ms-keyframes formjoin {
+    0%{opacity:0;}
+    100%{opacity:1;}
+}
+@-o-keyframes formjoin {
+    0%{opacity:0;}
+    100%{opacity:1;}
+}
 
-    100%{
-        opacity:1;
-
-    }
-}*/
+#contact-f.leave {
+    margin-top:-40px;
+    opacity:0;
+}
 
 /*General input*/
 #name,#email {
@@ -27,22 +50,21 @@
     color:#fff;
 }
 
-
 #name {
     top:40%;
     left:30%;
     transform:translate(-30%,-40%);
     font-size:24px;
-
     letter-spacing:2.5px;
     transition-duration:.2s;
-
 }
 
 /*general clicked*/
 #name.clicked,#email.clicked {
     transition-duration:.2s;
     padding-bottom:1px;
+    color:#000;
+    border-bottom:2px rgba(8, 8, 8, 0.8) solid;
 }
 
 /*email*/
@@ -53,7 +75,6 @@
     font-size:24px;
     letter-spacing:2.5px;
     transition-duration:.2s;
-    
 }
 
 @import url('https://fonts.googleapis.com/css?family=Montserrat');
@@ -77,8 +98,11 @@
     border-radius:4px;
 }
 
-textarea::-moz-placeholder {
-
+#textarea.clicked {
+    transition-duration:.2s;
+    color:#000;
+    border-top:4px rgba(8, 8, 8, 0.8) solid;
+    border-bottom:4px rgba(8, 8, 8, 0.8) solid;
 }
 
 #submit {
@@ -86,7 +110,7 @@ textarea::-moz-placeholder {
     top:90%;
     left:50%;
     transform:translate(-50%,-90%);
-    font-size:23px;
+    font-size:20px;
     color:rgb(30, 30, 31);
     font-family: 'Montserrat', sans-serif;
     background:transparent;
@@ -99,7 +123,6 @@ textarea::-moz-placeholder {
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cccccc', endColorstr='#ffffff',GradientType=1 );
     padding:4px 25px 4px 25px;
     transition-duration:.4s;
-
 }
 
 #submit:hover {
@@ -107,5 +130,7 @@ textarea::-moz-placeholder {
     transition-duration:.4s;
     background: rgb(32, 32, 32); /* Old browsers */
     color:#fff;
+    padding:4px 30px 4px 30px;
+    letter-spacing:2.5px;
 }
 

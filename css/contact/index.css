@@ -31,22 +31,34 @@ html {
     letter-spacing:4px;
     font-weight:800;
     color:#fff;
-    animation:joinhe1 .7s forwards;
     pointer-events:none;
     user-select:none;-webkit-user-select:none;-moz-user-select:none;-o-user-select:none;-ms-user-select:none;
+    animation:joinhe1 .7s forwards;
+    -webkit-animation:joinhe1 .7s forwards;
+    -moz-animation:joinhe1 .7s forwards;
+    -ms-animation:joinhe1 .7s forwards;
+    -o-animation:joinhe1 .7s forwards;
 }
 
 @keyframes joinhe1 {
-    0%{
-        left:-50%;
-        transform:translate(-50%,-18%)rotateX(0deg);
-    }
-
-
-    100%{
-        left:50%;
-        transform:translate(-50%,-18%)rotateX(360deg);
-    }
+    0%{left:-50%;transform:translate(-50%,-18%)rotateX(0deg);}
+    100%{left:50%;transform:translate(-50%,-18%)rotateX(360deg);}
+}
+@-webkit-keyframes joinhe1 {
+    0%{left:-50%;transform:translate(-50%,-18%)rotateX(0deg);}
+    100%{left:50%;transform:translate(-50%,-18%)rotateX(360deg);}
+}
+@-moz-keyframes joinhe1 {
+    0%{left:-50%;transform:translate(-50%,-18%)rotateX(0deg);}
+    100%{left:50%;transform:translate(-50%,-18%)rotateX(360deg);}
+}
+@-ms-keyframes joinhe1 {
+    0%{left:-50%;transform:translate(-50%,-18%)rotateX(0deg);}
+    100%{left:50%;transform:translate(-50%,-18%)rotateX(360deg);}
+}
+@-o-keyframes joinhe1 {
+    0%{left:-50%;transform:translate(-50%,-18%)rotateX(0deg);}
+    100%{left:50%;transform:translate(-50%,-18%)rotateX(360deg);}
 }
 
 #ydt-copy {
@@ -58,22 +70,34 @@ html {
     font-size:35px;
     letter-spacing:4px;
     font-weight:800;
-    animation:joinhe2 .7s forwards;
     pointer-events:none;
     user-select:none;-webkit-user-select:none;-moz-user-select:none;-o-user-select:none;-ms-user-select:none;
+    animation:joinhe2 .7s forwards;
+    -webkit-animation:joinhe2 .7s forwards;
+    -moz-animation:joinhe2 .7s forwards;
+    -ms-animation:joinhe2 .7s forwards;
+    -o-animation:joinhe2 .7s forwards;
 }
 
 @keyframes joinhe2 {
-    0%{
-        right:-50%;
-        transform:translate(50%,-14%)rotateX(0deg);
-    }
-
-
-    100%{
-        right:50%;
-        transform:translate(50%,-14%)rotateX(360deg);
-    }
+    0%{right:-50%;transform:translate(50%,-14%)rotateX(0deg);}
+    100%{right:50%;transform:translate(50%,-14%)rotateX(360deg);}
+}
+@-webkit-keyframes joinhe2 {
+    0%{right:-50%;transform:translate(50%,-14%)rotateX(0deg);}
+    100%{right:50%;transform:translate(50%,-14%)rotateX(360deg);}
+}
+@-moz-keyframes joinhe2 {
+    0%{right:-50%;transform:translate(50%,-14%)rotateX(0deg);}
+    100%{right:50%;transform:translate(50%,-14%)rotateX(360deg);}
+}
+@-ms-keyframes joinhe2 {
+    0%{right:-50%;transform:translate(50%,-14%)rotateX(0deg);}
+    100%{right:50%;transform:translate(50%,-14%)rotateX(360deg);}
+}
+@-o-keyframes joinhe2 {
+    0%{right:-50%;transform:translate(50%,-14%)rotateX(0deg);}
+    100%{right:50%;transform:translate(50%,-14%)rotateX(360deg);}
 }
 
 #line1 {
@@ -85,17 +109,34 @@ html {
     border-bottom:2px #000 solid;
     animation-delay:.7s!important;
     animation:linejoin 1s forwards;
+    -webkit-animation-delay:.7s!important;
+    -webkit-animation:linejoin 1s forwards;
+    -moz-animation-delay:.7s!important;
+    -moz-animation:linejoin 1s forwards;
+    -ms-animation-delay:.7s!important;
+    -ms-animation:linejoin 1s forwards;
+    -o-animation-delay:.7s!important;
+    -o-animation:linejoin 1s forwards;
 }
 
 @keyframes linejoin {
-
-    0%{
-    width:0px;
-    }
-
-    100%{
-        width:300px;
-    }
-
+    0%{width:0px;}
+    100%{width:300px;}
+}
+@-webkit-keyframes linejoin {
+    0%{width:0px;}
+    100%{width:300px;}
+}
+@-moz-keyframes linejoin {
+    0%{width:0px;}
+    100%{width:300px;}
+}
+@-ms-keyframes linejoin {
+    0%{width:0px;}
+    100%{width:300px;}
+}
+@-o-keyframes linejoin {
+    0%{width:0px;}
+    100%{width:300px;}
 }
 

@@ -1,0 +1,248 @@
+body {
+    overflow:hidden;
+    margin: 0;
+    padding: 0;
+    background: #878787;
+  }
+  
+  svg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width:800px;
+    height:800px;
+  }
+  
+  svg .circle {
+    fill: transparent;
+    stroke: #ccc;
+    stroke-width: 4px;
+    stroke-dasharray: 300;
+    stroke-dashoffset: 300;
+    animation: circle .8s forwards;
+    -webkit-animation: circle .8s forwards;
+    -moz-animation: circle .8s forwards;
+    -ms-animation: circle .8s forwards;
+    -o-animation: circle .8s forwards;
+  }
+  
+  @keyframes circle {
+    50% {
+      stroke-width: 11px;
+    }
+    60% {
+      fill: transparent;
+      stroke-dashoffset: 0;
+    }
+    100% {
+      stroke: transparent;
+      stroke-dashoffset: 0;
+      fill: rgba(255, 255, 255, .1);
+    }
+  }
+  @-webkit-keyframes circle {
+    50% {
+      stroke-width: 11px;
+    }
+    60% {
+      fill: transparent;
+      stroke-dashoffset: 0;
+    }
+    100% {
+      stroke: transparent;
+      stroke-dashoffset: 0;
+      fill: rgba(255, 255, 255, .1);
+    }
+  }
+  @-moz-keyframes circle {
+    50% {
+      stroke-width: 11px;
+    }
+    60% {
+      fill: transparent;
+      stroke-dashoffset: 0;
+    }
+    100% {
+      stroke: transparent;
+      stroke-dashoffset: 0;
+      fill: rgba(255, 255, 255, .1);
+    }
+  }
+  @-ms-keyframes circle {
+    50% {
+      stroke-width: 11px;
+    }
+    60% {
+      fill: transparent;
+      stroke-dashoffset: 0;
+    }
+    100% {
+      stroke: transparent;
+      stroke-dashoffset: 0;
+      fill: rgba(255, 255, 255, .1);
+    }
+  }
+  @-o-keyframes circle {
+    50% {
+      stroke-width: 11px;
+    }
+    60% {
+      fill: transparent;
+      stroke-dashoffset: 0;
+    }
+    100% {
+      stroke: transparent;
+      stroke-dashoffset: 0;
+      fill: rgba(255, 255, 255, .1);
+    }
+  }
+  
+  svg .check {
+    fill: #ccc;
+    stroke: #ccc;
+    stroke-width: 3px;
+    stroke-dasharray: 100;
+    stroke-dashoffset: 100;
+    animation-fill-mode: both;
+    animation-delay: .8s!important;
+    animation: check .5s forwards;
+    -webkit-animation-delay: .8s!important;
+    -webkit-animation: check .5s forwards;
+    -moz-animation-delay: .8s!important;
+    -moz-animation: check .5s forwards;
+    -ms-animation-delay: .8s!important;
+    -ms-animation: check .5s forwards;
+    -o-animation-delay: .8s!important;
+    -o-animation: check .5s forwards;
+  }
+  
+  @keyframes check {
+    50% {
+      stroke-width: 6px;
+      fill: transparent;
+      transform: scale(.9);
+    }
+    100% {
+      stroke: #08fd6e;
+      stroke-dashoffset: 0;
+      transform: scale(1);
+    }
+  }
+  @-webkit-keyframes check {
+    50% {
+      stroke-width: 6px;
+      fill: transparent;
+      transform: scale(.9);
+    }
+    100% {
+      stroke: #08fd6e;
+      stroke-dashoffset: 0;
+      transform: scale(1);
+    }
+  }
+  @-moz-keyframes check {
+    50% {
+      stroke-width: 6px;
+      fill: transparent;
+      transform: scale(.9);
+    }
+    100% {
+      stroke: #08fd6e;
+      stroke-dashoffset: 0;
+      transform: scale(1);
+    }
+  }
+  @-ms-keyframes check {
+    50% {
+      stroke-width: 6px;
+      fill: transparent;
+      transform: scale(.9);
+    }
+    100% {
+      stroke: #08fd6e;
+      stroke-dashoffset: 0;
+      transform: scale(1);
+    }
+  }
+  @-o-keyframes check {
+    50% {
+      stroke-width: 6px;
+      fill: transparent;
+      transform: scale(.9);
+    }
+    100% {
+      stroke: #08fd6e;
+      stroke-dashoffset: 0;
+      transform: scale(1);
+    }
+  }
+  
+  @import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+  /*Sended*/
+  #sended {
+    position:absolute;
+    top:70%;
+    left:50%;
+    transform:translate(-50%,-70%);
+    font-size:24px;
+    color:rgb(15, 15, 15);
+    letter-spacing:4.5px;
+    font-family: 'Montserrat', sans-serif;
+    user-select:none;-webkit-user-select:none;-moz-user-select:none;-o-user-select:none;-ms-user-select:none;
+    opacity:0;
+    animation-delay:.4s!important;
+    animation:sended .5s forwards;
+    -webkit-animation-delay:.4s!important;
+    -webkit-animation:sended .5s forwards;
+    -moz-animation-delay:.4s!important;
+    -moz-animation:sended .5s forwards;
+    -ms-animation-delay:.4s!important;
+    -ms-animation:sended .5s forwards;
+    -o-animation-delay:.4s!important;
+    -o-animation:sended .5s forwards;
+  }
+
+  @keyframes sended {
+    0%{opacity:0;filter:blur(50px);}
+    100%{opacity:1;filter:blur(0px);}
+  }
+  @-webkit-keyframes sended {
+    0%{opacity:0;filter:blur(50px);}
+    100%{opacity:1;filter:blur(0px);}
+  }
+  @-moz-keyframes sended {
+    0%{opacity:0;filter:blur(50px);}
+    100%{opacity:1;filter:blur(0px);}
+  }
+  @-ms-keyframes sended {
+    0%{opacity:0;filter:blur(50px);}
+    100%{opacity:1;filter:blur(0px);}
+  }
+  @-o-keyframes sended {
+    0%{opacity:0;filter:blur(50px);}
+    100%{opacity:1;filter:blur(0px);}
+  }
+
+  #home {
+    position:absolute;
+    top:80%;
+    left:50%;
+    transform:translate(-50%,-80%)scale(1);
+    font-size:24px;
+    color:rgb(58, 58, 58);
+    letter-spacing:4.5px;
+    font-family: 'Montserrat', sans-serif;
+    user-select:none;-webkit-user-select:none;-moz-user-select:none;-o-user-select:none;-ms-user-select:none;
+    text-decoration:none;
+    transition-duration:.4s;
+  }
+
+  #home:hover {
+    transition-duration:.4s;
+    color:rgb(3, 3, 3);
+    letter-spacing:5px;
+    transform:translate(-50%,-80%)scale(1.2);
+
+  }
