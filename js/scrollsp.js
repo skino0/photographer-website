@@ -1,4 +1,7 @@
+
 //scroll behavior
+
+
 if (window.addEventListener) window.addEventListener('DOMMouseScroll', wheel, false);
 window.onmousewheel = document.onmousewheel = wheel;
 
@@ -14,11 +17,10 @@ function wheel(event) {
 
 function handle(delta) {
     var time = 1000;
-    var distance = 770;
+    var distance = 780;
 
     $('html, body').stop().animate({
         scrollTop: $(window).scrollTop() - (distance * delta)
     }, time );
 }
-
 
