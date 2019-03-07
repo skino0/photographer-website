@@ -1,0 +1,72 @@
+.social {
+    font-size:34px;
+    color:rgb(37, 37, 37);
+    transition-duration:.4s;
+
+}
+
+.social:hover {
+    cursor:pointer;
+    transition-duration:.4s;
+    color:rgb(100, 100, 100);
+}
+
+#insta {
+    position:absolute;
+    top:47%;
+    left:45%;
+    transform:translate(-45%,-47%)scale(1);
+    z-index:2;
+}
+
+#insta:hover {
+    transition-duration:.32;
+    transform:translate(-45%,-47%)scale(1.4);
+    color: transparent;
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+    background: -webkit-radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+    background-clip: text;
+    -webkit-background-clip: text;
+}
+
+#whatsapp {
+    position:absolute;
+    top:47%;
+    left:50%;
+    transform:translate(-50%,-47%)scale(1);
+    z-index:2;
+}
+
+#whatsapp:hover {
+    transition-duration:.2s;
+    transform:translate(-50%,-47%)scale(1.4);
+    color:#128C7E;
+}
+
+#messenger {
+    position:absolute;
+    top:47%;
+    left:55%;
+    transform:translate(-55%,-47%)scale(1);
+    z-index:2;
+}
+
+#messenger:hover {
+    transition-duration:.2s;
+    transform:translate(-55%,-47%)scale(1.4);
+    color: #0078ff;
+}
+
+/*almost copy of contact header*/
+#so-header {
+    position:absolute;
+    top:31%;
+    left:50%;
+    transform:translate(-50%,-31%);
+    color:#000;
+    font-size:30px;
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing:5.5px;
+    font-weight:400;
+    text-shadow:-2px -2.2px 0px rgb(177, 177, 177);
+}

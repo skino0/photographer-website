@@ -15,7 +15,7 @@
     3.1px 1px 0px rgb(110, 110, 110);
     /*glitch & op anim*/
     /*animation:headerop 1.8s infinite;*/
-    animation:headerjoin 1s forwards;
+    animation:headerjoin 2s forwards;
     opacity:1;
 
 }
