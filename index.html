@@ -11,10 +11,14 @@
     <link rel="stylesheet" type="text/css" href="css/nav.css">
     <link rel="stylesheet" type="text/css" href="css/container-one.css">
     <link rel="stylesheet" type="text/css" href="css/container-sec.css">
+    <link rel="stylesheet" type="text/css" href="css/container-third.css">
+    <link rel="stylesheet" type="text/css" href="css/container-fourth.css">
+    <link rel="stylesheet" type="text/css" href="css/social.css">
+
     <!--Font Awesome-->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css">
 
-   <title>Social icons</title>
+   <title>YourDopeTherapy</title>
 </head>
 <body>
 
@@ -24,15 +28,15 @@
         <div class="slideshow-container">
         <!--Slider-->
         <div class="slide fade">
-            <img src="images/pic1.jpg" draggable="false">
+            <img src="images/pic1.jpg" draggable="false" onmousedown="return false;">
         </div>
         
         <div class="slide fade">
-            <img src="images/pic2.jpg" draggable="false">
+            <img src="images/pic2.jpg" draggable="false" onmousedown="return false;">
         </div>
         
         <div class="slide fade">
-            <img src="images/pic3.jpg" draggable="false">
+            <img src="images/pic3.jpg" draggable="false" onmousedown="return false;">
         </div>
 <div id="dots">
                 <span class="dot"></span> 
@@ -57,12 +61,33 @@
         <div id="contact" class="navitem">CONTACT</div>
     </div>
 
-    <!--Sec container-->
+    <!--Sec container (About)-->
     <div id="about-container">
-        <div id="overlay"></div>
-        <img id="boz" src="images/boz2.jpg"></img>
+        <div id="overlay">
+            <p id="storyabout">Im YourDopeTherapy<br>
+                My real name is 'Petros Bonzeko'.<br>
+                I working Freelance as Professional Photographer <br>& as Video Producer/Editor.<br>
+                I located in <a href="#" target="_blank">Krinides,Kavala</a><br>
+                I shooting Portrait's & Landscapes<br>
+                I love taking people pictures when they smile!!
+            </p>
+        </div>
+        <img id="boz" src="images/boz2.jpg" draggable="false" onmousedown="return false;"></img>
+    <!--Ending sec container-->
+    </div>
+    <!--Third Container (Work)-->
+    <div id="container-third">
 
 
+    </div>
+    <!--Fourth container contact-->
+    <div id="container-fourth">
+        <h1 id="contact-header">CONTACT</h1>
+        <h1 id="so-header">MEDIA</h1>
+        <a id="insta" class="social"><i class="fab fa-instagram"></i></a>
+        <a id="whatsapp" class="social"><i class="fab fa-whatsapp"></i></a>
+        <a id="messenger" class="social"><i class="fab fa-facebook-messenger"></i></a>
+        <a href="contact.html" id="form">CLICK HERE<br>IF YOU WANT SUBMIT A CONTACT FORM</a>
     </div>
 
 </body>
@@ -72,5 +97,6 @@
 <script type="text/javascript" src="js/nav.js"></script>
 <script type="text/javascript" src="js/scrollsp.js"></script>
 <script type="text/javascript" src="js/top.js"></script>
+<script type="text/javascript" src="js/containers.js"></script>
 
 </html>
