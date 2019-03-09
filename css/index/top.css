@@ -1,0 +1,27 @@
+#gotop {
+    position:fixed;
+    bottom:2%;
+    right:1%;
+    background-color:#FF0000;
+    width:75px;
+    height:75px;
+    z-index:10!important;
+}
+
+.fa-arrow-circle-up,#top {
+    color:#fff;
+    text-align:center;
+
+}
+
+.fa-arrow-circle-up {
+
+
+
+}
+
+#top {
+
+
+
+}

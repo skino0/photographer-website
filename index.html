@@ -14,36 +14,33 @@
     <link rel="stylesheet" type="text/css" href="css/index/container-third.css">
     <link rel="stylesheet" type="text/css" href="css/index/container-fourth.css">
     <link rel="stylesheet" type="text/css" href="css/index/social.css">
-
+    <link rel="stylesheet" type="text/css" href="css/index/top.css">
     <!--Font Awesome-->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css">
-
    <title>YourDopeTherapy</title>
 </head>
 <body>
 
     <div id="bg"></div>
-
+    <div id="gotop">
+        <i class="fas fa-arrow-circle-up"></i>
+        <p id="top">GO BACK TO TOP</p>
+    </div>
+    <!--Slide container-->
         <div id="slide-container">
         <div class="slideshow-container">
         <!--Slider-->
         <div class="slide fade">
             <img src="images/pic1.jpg" draggable="false" onmousedown="return false;">
         </div>
-        
         <div class="slide fade">
             <img src="images/pic2.jpg" draggable="false" onmousedown="return false;">
         </div>
-        
         <div class="slide fade">
             <img src="images/pic3.jpg" draggable="false" onmousedown="return false;">
         </div>
-<div id="dots">
-                <span class="dot"></span> 
-                <span class="dot"></span> 
-                <span class="dot"></span> 
-        </div>-->
-
+        <div id="dots"><span class="dot"></span> <span class="dot"></span> <span class="dot"></span></div>
+    <!--Slider end-->
     </div>
 
     <h1 id="header1">YOUR <span id="up">DOPE</span> THERAPY</h1>
@@ -51,7 +48,6 @@
     <h1 id="header2">PERSONAL WEBSITE</h1>
 
     <!--Slide container end-->
-
     </div>
 
     <!--Nav-->
@@ -75,10 +71,42 @@
         <img id="boz" src="images/boz2.jpg" draggable="false" onmousedown="return false;"></img>
     <!--Ending sec container-->
     </div>
+
     <!--Third Container (Work)-->
     <div id="container-third">
+        <!--Active image container-->
+        <div id="activeimage">
+            <img id ="bgimg" src="images/work/work-3.jpg" draggable="false" onmousedown="return false;">
+            <!--close fullscreen icon-->
 
+            <div id="icon">
+                <i id ="x" class="far fa-window-close"></i>
+            <!--End of icon-->
+            </div>
+        <!--End of active image-->
+        </div>
+        
+        <div id="work-imgs">
+        <div id="work-grid">
+        <!--**Maked for 12 images only *remember-->
+            <img class="workimage" src="images/work/work-1.jpg">
+            <img class="workimage" src="images/work/work-2.jpg">
+            <img class="workimage" src="images/work/work-3.jpg">
+            <img class="workimage" src="images/work/work-4.jpg">
+            <img class="workimage" src="images/work/work-5.jpg">
+            <img class="workimage" src="images/work/work-6.jpg">
+            <img class="workimage" src="images/work/work-7.jpg">
+            <img class="workimage" src="images/work/work-8.jpg">
+            <img class="workimage" src="images/work/work-9.jpg">
+            <img class="workimage" src="images/work/work-10.jpg">
+            <img class="workimage" src="images/work/work-1.jpg">
+            <img class="workimage" src="images/work/work-2.jpg">
 
+    <!--End work-Grid-->
+       </div>
+    <!--End work-imgs container-->
+    </div>
+    <!--End Third container-->
     </div>
     <!--Fourth container contact-->
     <div id="container-fourth">
@@ -90,6 +118,7 @@
         <a href="contact.html" target="_blank" id="form">CLICK HERE<br>IF YOU WANT SUBMIT A CONTACT FORM</a>
     </div>
 
+
 </body>
 <script type="text/javascript" src="js/jquery.js"></script>
 <script type="text/javascript" src="js/index/index.js"></script>
@@ -98,5 +127,5 @@
 <script type="text/javascript" src="js/index/scrollsp.js"></script>
 <script type="text/javascript" src="js/index/top.js"></script>
 <script type="text/javascript" src="js/index/containers.js"></script>
-
+<script type="text/javascript" src="js/index/work-imgs.js"></script>
 </html>
