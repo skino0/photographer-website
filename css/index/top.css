@@ -1,27 +1,48 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
 #gotop {
     position:fixed;
-    bottom:2%;
+    bottom:1%;
     right:1%;
-    background-color:#FF0000;
-    width:75px;
-    height:75px;
+    background: -moz-linear-gradient(-45deg, rgba(0,0,0,.4), 0%, rgba(69,72,77,0.09) 96%, rgba(69,72,77,0.05) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(-45deg, rgba(0,0,0,.4) 0%,rgba(69,72,77,0.09) 96%,rgba(69,72,77,0.05) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(135deg, rgba(0,0,0,.4) 0%,rgba(69,72,77,0.09) 96%,rgba(69,72,77,0.05) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#0d45484d',GradientType=1 );
+    width:125px;
     z-index:10!important;
+    transition-duration:.7s;
+    opacity:0;
+    border-radius:4px;
+}
+
+#gotop.visibletop {
+    transition-duration:.7s;
+    opacity:1;
+}
+
+#gotop:hover {
+    cursor:pointer;
+    transition-duration:.4s;
+    background: rgba(0,0,0,.8);
 }
 
 .fa-arrow-circle-up,#top {
     color:#fff;
     text-align:center;
-
 }
 
 .fa-arrow-circle-up {
-
-
-
+    font-size:25px;
+    text-align:center!important;
+    width:100%;
+    padding-top:10px;
 }
 
 #top {
-
-
-
+    font-size:11px;
+    text-align:center;
+    padding:10px 0px 10px 0px;
+    font-family: 'Montserrat', sans-serif;
+    line-height:18px;
+    letter-spacing:.5px;
 }

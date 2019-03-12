@@ -15,6 +15,7 @@
     <link rel="stylesheet" type="text/css" href="css/index/container-fourth.css">
     <link rel="stylesheet" type="text/css" href="css/index/social.css">
     <link rel="stylesheet" type="text/css" href="css/index/top.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!--Font Awesome-->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css">
    <title>YourDopeTherapy</title>
@@ -59,24 +60,32 @@
 
     <!--Sec container (About)-->
     <div id="about-container">
-        <div id="overlay">
+
+        <div id="overlay" data-aos="fade-left" data-aos-delay="100" data-aos-duration="1200">
             <p id="storyabout">Im YourDopeTherapy<br>
                 My real name is 'Petros Bonzeko'.<br>
                 I working Freelance as Professional Photographer <br>& as Video Producer/Editor.<br>
-                I located in <a href="#" target="_blank">Krinides,Kavala</a><br>
+                I located in <a href="https://www.google.com/maps/d/viewer?vpsrc=6&ctz=-180&ie=UTF8&t=h&oe=UTF8&msa=0&mid=1stYXyL0REUKMIVuDecsIKUlLjUU&ll=40.97230972836826%2C24.3358310000001&z=13" target="_blank">Krinides,Kavala</a><br>
                 I shooting Portrait's & Landscapes<br>
                 I love taking people pictures when they smile!!
-            </p>
+        </p>
         </div>
-        <img id="boz" src="images/boz2.jpg" draggable="false" onmousedown="return false;"></img>
+
+        <img id="boz" src="images/boz2.jpg" draggable="false" onmousedown="return false;"
+        data-aos="zoom-in-up" data-aos-delay="0" data-aos-duration="1000"></img>
+        <ul id="tools" data-aos="fade-right" data-aos-delay="500" data-aos-duration="700">
+            <li>DSLR Nikon D7100</li><!--DSLR Nikon D7100-->
+            <li>Nikon AF-S DX Nikkor 35mm f1</li><!--DSLR Nikon D7100-->
+            <li>TAMRON AF 70-300mm TELE-MACRO</li><!--DSLR Nikon D7100-->
+        </ul>
     <!--Ending sec container-->
     </div>
 
     <!--Third Container (Work)-->
-    <div id="container-third">
+    <div id="container-third" data-aos="fade-right" data-aos-duration="500">
         <!--Active image container-->
         <div id="activeimage">
-            <img id ="bgimg" src="images/work/work-3.jpg" draggable="false" onmousedown="return false;">
+            <img id ="bgimg" src="" draggable="false" onmousedown="return false;">
             <!--close fullscreen icon-->
 
             <div id="icon">
@@ -85,23 +94,17 @@
             </div>
         <!--End of active image-->
         </div>
-        
         <div id="work-imgs">
         <div id="work-grid">
         <!--**Maked for 12 images only *remember-->
             <img class="workimage" src="images/work/work-1.jpg">
-            <img class="workimage" src="images/work/work-2.jpg">
             <img class="workimage" src="images/work/work-3.jpg">
             <img class="workimage" src="images/work/work-4.jpg">
             <img class="workimage" src="images/work/work-5.jpg">
             <img class="workimage" src="images/work/work-6.jpg">
             <img class="workimage" src="images/work/work-7.jpg">
             <img class="workimage" src="images/work/work-8.jpg">
-            <img class="workimage" src="images/work/work-9.jpg">
-            <img class="workimage" src="images/work/work-10.jpg">
             <img class="workimage" src="images/work/work-1.jpg">
-            <img class="workimage" src="images/work/work-2.jpg">
-
     <!--End work-Grid-->
        </div>
     <!--End work-imgs container-->
@@ -110,22 +113,49 @@
     </div>
     <!--Fourth container contact-->
     <div id="container-fourth">
-        <h1 id="contact-header">CONTACT</h1>
-        <h1 id="so-header">MEDIA</h1>
-        <a id="insta" class="social"><i class="fab fa-instagram"></i></a>
-        <a id="whatsapp" class="social"><i class="fab fa-whatsapp"></i></a>
-        <a id="messenger" class="social"><i class="fab fa-facebook-messenger"></i></a>
-        <a href="contact.html" target="_blank" id="form">CLICK HERE<br>IF YOU WANT SUBMIT A CONTACT FORM</a>
+        <h1 id="contact-header" data-aos="fade-up" data-aos-delay="0" data-aos-duration="1000">CONTACT</h1>
+        <h1 id="so-header" data-aos="fade-up" data-aos-delay="0" data-aos-duration="1000">MEDIA</h1>
+        <a data-aos="fade-up" data-aos-delay="0" data-aos-duration="800" href="https://www.instagram.com/yourdopetherrapy/" target="_blank" id="insta" class="social"><i class="fab fa-instagram"></i></a>
+        <a data-aos="fade-up" data-aos-delay="0" data-aos-duration="800"id="whatsapp" class="social"><i class="fab fa-whatsapp"></i></a>
+        <p id="tel">+306988601904</p>
+        <a data-aos="fade-up" data-aos-delay="0" data-aos-duration="1000" href="https://m.me/caution.bioxazard/" target="_blank" id="messenger" class="social"><i class="fab fa-facebook-messenger"></i></a>
+        <a data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000" href="contact.html" target="_blank" id="form">CLICK HERE<br>IF YOU WANT SUBMIT A CONTACT FORM</a>
     </div>
 
-
+    <div id="cursor"></div>
 </body>
 <script type="text/javascript" src="js/jquery.js"></script>
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script type="text/javascript" src="js/index/index.js"></script>
 <script type="text/javascript" src="js/index/slide.js"></script>
 <script type="text/javascript" src="js/index/nav.js"></script>
-<script type="text/javascript" src="js/index/scrollsp.js"></script>
 <script type="text/javascript" src="js/index/top.js"></script>
 <script type="text/javascript" src="js/index/containers.js"></script>
 <script type="text/javascript" src="js/index/work-imgs.js"></script>
+<script type="text/javascript" src="js/index/social.js"></script>
+
+
+<script src="https://code.createjs.com/1.0.0/createjs.min.js"></script>
+<script>
+function init() {
+    // code here.
+  }
+</script>
+<script type="text/javascript">
+var queue = new createjs.LoadQueue();
+queue.loadFile("images/work/work-1.jpg");
+queue.on("progress", function() {
+    console.log("Progress:", queue.progress, event.progress);
+});
+</script>
+
+
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init({
+    });
+</script>
+
+
 </html>
