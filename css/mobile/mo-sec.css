@@ -1,0 +1,105 @@
+@media (max-width:30rem) {
+    @import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+    /*sec container mobile*/
+    #mo-sec {
+        position:absolute;
+        top:100%;
+        height:100vh;
+        width:100vw;
+        background:#1d1d1d;
+        z-index:1;
+    }
+
+    /*mobiel social media*/
+    /*little bit copy of desktop version*/
+    .mo-social {
+        font-size:50px;
+        color:rgb(37, 37, 37);
+        transition-duration:.4s;
+        color:rgb(100, 100, 100);
+        z-index:10!important;
+    }
+    
+    .mo-social:hover {
+        cursor:pointer;
+        transition-duration:.4s;
+        color:rgb(37, 37, 37);
+        transition-duration:.4s;
+    }
+    
+    #mo-insta {
+        position:absolute;
+        top:49%;
+        left:35%;
+        transform:translate(-35%,-49%);
+        z-index:2;
+        transition-duration:.32;
+        color: transparent;
+        background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+        background: -webkit-radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+        background-clip: text;
+        -webkit-background-clip: text;
+    }
+    
+    
+    
+    #mo-messenger {
+        position:absolute;
+        top:49%;
+        right:35%;
+        transform:translate(35%,-49%);
+        z-index:2;
+        color: #0078ff;
+
+    }
+    
+
+    @import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+    /*header social media*/
+    #mo-social-header {
+        position:absolute;
+        top:35%;
+        left:50%;
+        transform:translate(-50%,-35%);
+        color:#fff;
+        font-family: 'Montserrat', sans-serif;
+        text-shadow:-1px 0px 1px #000;
+        font-size:25px;
+        width:100%;
+        text-align:center;
+        font-weight:700;
+        letter-spacing:2.7px;
+    }
+
+    #underline {
+        position:absolute;
+        top:41%;
+        left:50%;
+        transform:translate(-50%,-41%);
+        width:170px;
+        height:2px;
+        background:rgb(224, 224, 224);
+    }
+
+    #clip1 {
+        position:absolute;
+        top:0%;
+        width:100%;
+        height:400px;
+        -webkit-clip-path: polygon(0 0, 100% 0, 100% 15%, 0 40%);
+        clip-path: polygon(0 0, 100% 0, 100% 15%, 0 40%);
+        background: #2e2e2e;
+    }
+    #clip2{
+        position:absolute;
+        bottom:0%;
+        width:100%;
+        height:400px;
+        -webkit-clip-path: polygon(0 100%, 100% 100%, 100% 60%, 0 85%);
+        clip-path: polygon(0 100%, 100% 100%, 100% 60%, 0 85%);
+        background: #2e2e2e;
+    }
+
+}

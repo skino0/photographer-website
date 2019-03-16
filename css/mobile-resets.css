@@ -1,0 +1,65 @@
+/*reset desktop elements*/
+@media (max-width:30rem) {
+    html,body {
+  overflow-y: scroll;
+        scroll-behavior: smooth;
+        background:transparent!important;
+        margin:0;
+        padding:0;
+    }
+    #bg {
+        display:none!important;
+        background:transparent;
+    }
+    #work-imgs,#work-grid{
+        display:none!important;
+    }
+    #bg {
+        display:none!important;
+    }
+    #gotop{
+        display:none!important;
+    }
+    #slide-container {
+        display:none!important;
+    }
+    #header1 {
+        display:none!important;
+    }
+    #workheader {
+        display:none!important;
+    }
+    #header2 {
+        display:none!important;
+    }
+    #navbar{
+        display:none!important;
+    }
+    #about-container {
+        display:none!important;
+    }
+    #container-third {
+        display:none!important;
+    }
+    #container-fourth {
+        display:none!important;
+    }
+}
+/*phone styles*/
+@media (min-width:30rem) {
+    /*Begining of mobile elems*/
+
+    #mo-first {
+        display:none!important;
+    }
+    #mo-boz {
+        display:none!important;
+    }
+    #mo-social{
+        display:none!important;
+    }
+    #mo-sec{
+        display:none!important;
+    }
+}
+

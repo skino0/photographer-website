@@ -1,0 +1,10 @@
+/*reset desktop elements*/
+@media (max-width:30rem) {
+    @import url('https://fonts.googleapis.com/css?family=Montserrat');
+    body {
+        scroll-behavior: smooth;
+        overflow-y: scroll;
+        overflow-x:hidden!important;
+        
+    }
+}

@@ -2,17 +2,12 @@
 ::selection {
     background-color:transparent;
 }
-html {
-    overflow-x:hidden!important;
-    overflow-y:hidden!important;
 
-/*    scroll-behavior: smooth;*//*none*/
-    /*overflow-y:hidden!important;*/
-}
 body {
     margin:0;
     padding:0;
-    overflow-x:hidden!important;
+    overflow-x:hidden;
+    overflow-y:hidden;
     background:#000;
 }
 
@@ -28,3 +23,28 @@ body {
     height:100vh;
 }
 
+img {
+    overflow: hidden;
+}
+
+#progress {
+    height:1px;
+    background:rgba(126,126,126);
+    position:absolute;
+    top:45%;
+    opacity:1;
+    z-index:2;
+    transition-duration:0.1s;
+}
+#all {
+    opacity:0;
+
+}
+.fadeIn {
+    opacity:1!important;
+    transition-duration:1s!important;
+}
+#progress.fadeOut {
+    opacity:0;
+    transition-duration:1s!important;
+}

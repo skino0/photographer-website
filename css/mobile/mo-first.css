@@ -1,0 +1,209 @@
+
+@media (max-width:30rem) {
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+/*mobile first container*/
+#mo-first {
+    position:absolute;
+    top:0%;
+    width:100vw;
+    height:100vh;
+    background: rgb(14, 14, 14);
+    -webkit-clip-path: polygon(0 50%, 100% 50%, 100% 50%, 0 50%);
+    clip-path: polygon(0 50%, 100% 50%, 100% 50%, 0 50%);
+    user-select:none;-webkit-user-select:none;-moz-user-select:none;-o-user-select:none;-ms-user-select:none;
+    animation:mo-first .7s forwards;
+    -webkit-animation:mo-first .7s forwards;
+    -moz-animation:mo-first .7s forwards;
+    -ms-animation:mo-first .7s forwards;
+    -o-animation:mo-first .7s forwards;
+}
+
+    @keyframes mo-first{
+        0%{-webkit-clip-path: polygon(0 50%, 100% 50%, 100% 50%, 0 50%);clip-path: polygon(0 50%, 100% 50%, 100% 50%, 0 50%);}
+        100%{-webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);}
+        }
+        @-webkit-keyframes mo-first{
+            0%{-webkit-clip-path: polygon(0 50%, 100% 50%, 100% 50%, 0 50%);clip-path: polygon(0 50%, 100% 50%, 100% 50%, 0 50%);}
+            100%{-webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);}
+            }
+            @-moz-keyframes mo-first{
+                0%{-webkit-clip-path: polygon(0 50%, 100% 50%, 100% 50%, 0 50%);clip-path: polygon(0 50%, 100% 50%, 100% 50%, 0 50%);}
+                100%{-webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);}
+                }
+                @-ms-keyframes mo-first{
+                    0%{-webkit-clip-path: polygon(0 50%, 100% 50%, 100% 50%, 0 50%);clip-path: polygon(0 50%, 100% 50%, 100% 50%, 0 50%);}
+                    100%{-webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);}
+                    }
+                    @-o-keyframes mo-first{
+                        0%{-webkit-clip-path: polygon(0 50%, 100% 50%, 100% 50%, 0 50%);clip-path: polygon(0 50%, 100% 50%, 100% 50%, 0 50%);}
+                        100%{-webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);}
+                    }
+
+#mo-boz1 {
+    position:absolute;
+    width:100vw;
+    height:70%;
+    top:50%;
+    transform:translateY(-50%);
+    z-index:-1;
+    animation:boz 20s infinite;
+    -webkit-animation:boz 20s infinite;
+    -moz-animation:boz 20s infinite;
+    -ms-animation:boz 20s infinite;
+    -o-animation:boz 20s infinite;
+}
+@keyframes boz {
+    0%{transform:translateY(-50%)scaleY(1);}
+    50%{transform:translateY(-50%)scaleY(1.15);}
+    100%{transform:translateY(-50%)scaleY(1);}
+}
+@-webkit-keyframes boz {
+    0%{transform:translateY(-50%)scaleY(1);}
+    50%{transform:translateY(-50%)scaleY(1.15);}
+    100%{transform:translateY(-50%)scaleY(1);}
+}
+@-moz-keyframes boz {
+    0%{transform:translateY(-50%)scaleY(1);}
+    50%{transform:translateY(-50%)scaleY(1.15);}
+    100%{transform:translateY(-50%)scaleY(1);}
+}
+@-ms-keyframes boz {
+    0%{transform:translateY(-50%)scaleY(1);}
+    50%{transform:translateY(-50%)scaleY(1.15);}
+    100%{transform:translateY(-50%)scaleY(1);}
+}
+@-o-keyframes boz {
+    0%{transform:translateY(-50%)scaleY(1);}
+    50%{transform:translateY(-50%)scaleY(1.15);}
+    100%{transform:translateY(-50%)scaleY(1);}
+}
+
+#boz-behind {
+    position:absolute;
+    width:100vw;
+    height:70vh;
+    top:50%;
+    transform:translateY(-50%);
+    z-index:0;
+    background-color:#ccc;
+    filter:blur(4px);
+    user-select:none;-webkit-user-select:none;-moz-user-select:none;-o-user-select:none;-ms-user-select:none;
+
+}
+
+#mo-header1 {
+    position:absolute;
+    color:#fff;
+    top:50%;
+    left:2%;
+    transform:translateY(-50%);
+    font-size:40px;
+    font-family: 'Montserrat', sans-serif;
+    line-height:42px;
+    letter-spacing:1.7px;
+    text-shadow:2.8px .4px 0px #000;
+}
+
+#mo-header2 {
+    position:absolute;
+    color:#fff;
+    top:70%;
+    left:2%;
+    transform:translateY(-70%);
+    font-size:17px;
+    font-family: 'Montserrat', sans-serif;
+    line-height:25px;
+    letter-spacing:.4px;
+    text-shadow:2.8px .4px 0px #000;
+    text-align:left;
+    /*join anim after header*/
+    opacity:0;
+    filter:blur(40px);
+    animation-delay:1.5s!important;
+    animation:moheaderjoin2 .2s forwards;
+    -webkit-animation-delay:1.5s!important;
+    -webkit-animation:moheaderjoin2 .2s forwards;
+    -moz-animation-delay:1.5s!important;
+    -moz-animation:moheaderjoin2 .2s forwards;
+    -ms-animation-delay:1.5s!important;
+    -ms-animation:moheaderjoin2 .2s forwards;
+    -o-animation-delay:1.5s!important;
+    -o-animation:moheaderjoin2 .2s forwards;
+}
+@keyframes moheaderjoin2 {
+    0%{opacity:0;filter:blur(40px);}
+    100%{opacity:1;filter:blur(0px);}
+}
+@-webkit-keyframes moheaderjoin2 {
+    0%{opacity:0;filter:blur(40px);}
+    100%{opacity:1;filter:blur(0px);}
+}
+@-moz-keyframes moheaderjoin2 {
+    0%{opacity:0;filter:blur(40px);}
+    100%{opacity:1;filter:blur(0px);}
+}
+@-ms-keyframes moheaderjoin2 {
+    0%{opacity:0;filter:blur(40px);}
+    100%{opacity:1;filter:blur(0px);}
+}
+@-o-keyframes moheaderjoin2 {
+    0%{opacity:0;filter:blur(40px);}
+    100%{opacity:1;filter:blur(0px);}
+}
+
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+#tapfirst {
+    position:absolute;
+    color:#ccc;
+    bottom:4%;
+    left:50%;
+    transform:translate(-50%,4%);
+    font-family: 'Poppins', sans-serif;
+    font-size:17px;
+    width:100%;
+    text-align:center;
+    letter-spacing:2.5px;
+    user-select:none;-webkit-user-select:none;-moz-user-select:none;-o-user-select:none;-ms-user-select:none;
+}
+
+/*header join's*/
+#your,#dope,#therapy {
+    margin:-100%;
+    animation:moheaderjoin .4s forwards;
+    -webkit-animation:moheaderjoin .4s forwards;
+    -moz-animation:moheaderjoin .4s forwards;
+    -ms-animation:moheaderjoin .4s forwards;
+    -o-animation:moheaderjoin .4s forwards;
+
+}
+#your {
+    animation-delay:.7s!important;
+    -webkit-animation-delay:.7s!important;
+    -moz-animation-delay:.7s!important;
+    -ms-animation-delay:.7s!important;
+    -o-animation-delay:.7s!important;
+
+}
+#dope {
+    animation-delay:.9s!important;
+    -webkit-animation-delay:.9s!important;
+    -moz-animation-delay:.9s!important;
+    -ms-animation-delay:.9s!important;
+    -o-animation-delay:.9s!important;
+
+}
+#therapy {
+    animation-delay:1.2s!important;
+    -webkit-animation-delay:1.2s!important;
+    -moz-animation-delay:1.2s!important;
+    -ms-animation-delay:1.2s!important;
+    -o-animation-delay:1.2s!important;
+}
+
+@keyframes moheaderjoin {0%{margin:-100%;}100%{margin:0%;}}}
+@-webkit-keyframes moheaderjoin {0%{margin:-100%;}100%{margin:0%;}}}
+@-moz-keyframes moheaderjoin {0%{margin:-100%;}100%{margin:0%;}}}
+@-ms-keyframes moheaderjoin {0%{margin:-100%;}100%{margin:0%;}}}
+@-o-keyframes moheaderjoin {0%{margin:-100%;}100%{margin:0%;}}}
+

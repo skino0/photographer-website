@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <!--General Reset-->
     <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/mobile-resets.css">
     <link rel="stylesheet" type="text/css" href="css/index/index.css">
     <link rel="stylesheet" type="text/css" href="css/index/slider.css">
     <link rel="stylesheet" type="text/css" href="css/index/nav.css">
@@ -15,13 +16,18 @@
     <link rel="stylesheet" type="text/css" href="css/index/container-fourth.css">
     <link rel="stylesheet" type="text/css" href="css/index/social.css">
     <link rel="stylesheet" type="text/css" href="css/index/top.css">
+    <link rel="stylesheet" type="text/css" href="css/mobile/index.css">
+    <link rel="stylesheet" type="text/css" href="css/mobile/mo-first.css">
+    <link rel="stylesheet" type="text/css" href="css/mobile/mo-sec.css">
+
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!--Font Awesome-->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css">
    <title>YourDopeTherapy</title>
 </head>
 <body>
-
+    <div id="progress"></div>
+    <div id="all">
     <div id="bg"></div>
     <div id="gotop">
         <i class="fas fa-arrow-circle-up"></i>
@@ -29,16 +35,19 @@
     </div>
     <!--Slide container-->
         <div id="slide-container">
-        <div class="slideshow-container">
+        <div class="slideshow-container" class="gallery">
         <!--Slider-->
         <div class="slide fade">
-            <img src="images/pic1.jpg" draggable="false" onmousedown="return false;">
+            <!--images/pic1.jpg-->
+            <img id="pic1" src="https://lh3.googleusercontent.com/l8gHbXV9XrqNFgkiAMUiXrWoyBI9MTysM9wZVNT35kXqvbw1mRscKq8u_WWR3cOZXphQ7IRIj2x7UWzQepVsrkaF6NHT9I1vbQOMWeMfdxUA7gIeTJoUGPZNdayXUP0uDIStcIm7lQ1SA8n-Nete4zqb-gFjWa8dll8rhXtv1d8tJNogTin-konDHksSKPOKH_NEyAT-NIeNF-ls6UVlfVn85gDh8aLicpEp_M0Ybj_--lGXpSx9gv2AP4uQFmtneEDuIQrpftdPYGLEoo5Gj-iBvdDIRZ_RD1NRrJExKfyXv0gYLoGyHjfAt90byNbJbbPxpUT2U_AGyWni2IeFLKAAkDCrgB4caOlgxHdX5mGpjAnD4RjbZMqBgJ49DTpMC6Rsty7xPyf_VNR-r-blNPLS83XW5g_whhZBWUCpUv27gDBEsmgF2S5FY_Ua_rHOyssHSAJjA2jBZ4TSch9QbnPXa-n3JYYt7gs_alwoiY8gDxR2i8NRaxU9tDWdQ5jLD0tXmpKj579m4Cad2EH6i5_S9OPdTA1rYFSgNPpi4zteiGKmdTLXnPm7yEDmEAC4ElsPgAJWf7CBQsKWAnLEZTX2nDeBPlOuOvMmPa0VySTWm7etw-tPzNWT1ChhZhQmRlU-sYtXulQ9KnBrMsIuZijGECwWBg=w1147-h764-no" draggable="false" onmousedown="return false;">
         </div>
         <div class="slide fade">
-            <img src="images/pic2.jpg" draggable="false" onmousedown="return false;">
+            <!--images/pic2.jpg-->
+            <img id="pic2" src="https://lh3.googleusercontent.com/Vel3mS7DbYZ9TwElLbDEfUys4crJ10ti56BrkbsJpb2j9t4aIdBkwKCgmrEh682QtRI84RUOeKpUP9qHROvlIbzWllyr04pS5gBnlpvEjwK2PK4tn8dYMO8Vqm_K4Vl1RpgkowYWTihyvaMzFxguKFTXILiRNxM2-KYJIPm0Vnqu0BDFREJRysTKzw-2SwiKx_1z8nVihicPdF8JFqeIYgcGeqfCdBp8cavrBqBs-JwzbJV23w_TkI1BDNDm-2sawtA064DzRjeWqnEgWUeMiZP5eYwdrmPvdC5Peo5DzArxR1FTg8jUwzTpNNIjAmceM50aCt6FP4bxfycnVmFkE7RFtj2EUszadBFBh0vbmpEcVdxbUsQkrPhztpSNkj7A1jAkXMDH93neYaVvXwjqSBosVexpc_SPNGcGmpumeMpLIEqQzOWButR8Df7bLJQDpJSt_gtCymbvv8b-NCYNPromwi24azeJkP61_4WpJ7JWBqkDBHzjgbsN1g8yBldjPvX2EPSF-Bt_xLyZRi6DU04md3RzDIPn9K0hAdPFm5_RyN9eBNEqyJ2Ss478v7jjlI8T0xVG5MYfJKvoo4so2vQMJVFy4aOPvHAU8QXW1gvVkWhKQF3KydTQTYg8dwNAiG_PQqpScwRuP6_lUKPU083Z7RlC7w=w1147-h764-no" draggable="false" onmousedown="return false;">
         </div>
         <div class="slide fade">
-            <img src="images/pic3.jpg" draggable="false" onmousedown="return false;">
+            <!--images/pic3.jpg-->
+            <img id="pic3" src="https://lh3.googleusercontent.com/Xkv2aaofq66nu-4KKunDcbTQn7dqcUka7E82Qb-UpDS2Be35z2_bi0mmfMoTdfx59lc0bwnaGgHf2lZ70644aSRECVnq59lFpSGkbFuyNc3lVJ8jR4GumKEaA4ALWBGlTtZT-yQQsqkT7iK5J8zsHuuqTyMIOfAQfjkblZztH0YfBnwHpT4VlYkgLf4tYdyv6ernFe29UGQ4ufo44nxWmE_S-zzVfVHCbN5SzuZxr55cmmtzuOLLrmjg_riaSMQJM0hm50qsNmMEyHWTNoYj1JCdlP8-wGSOHMfwt0pmWmMTcoKG9vtWUj8vff2QFQZCpzfUJgXJhsyUURARb5PxeJB-BvM0w-Uz0muatbugOq5DUJvRLGHEvRXG_0KgnMEP51UKtiyAM1H0q4r_pabUsjiW0UW29rC0hb1HkFyFPoag6EkOfrf_keQdrs_RncyzWZrf5W88YMowt_IW6MKlzZbs4AKW7zeGgX52mk7ZbLVSN7nVbzEE21GM_AWSHukXKIiR_wxgSeex08rIdrBHYsUHYGgzbrRizy2r0URJXZ4Y01jkL69rYN0TX1vjjx9z9M0HVOyZ6QO_dvQA6vRomqllysf_Bb4PNquiso5gpqd5Dmwxj1LX__RYRUeJ-OtdD8kOsLv-Q2VJirmHzK1QvlJRU4Yoaw=w1147-h764-no" draggable="false" onmousedown="return false;">
         </div>
         <div id="dots"><span class="dot"></span> <span class="dot"></span> <span class="dot"></span></div>
     <!--Slider end-->
@@ -72,7 +81,7 @@
         </div>
 
         <img id="boz" src="images/boz2.jpg" draggable="false" onmousedown="return false;"
-        data-aos="zoom-in-up" data-aos-delay="0" data-aos-duration="1000"></img>
+        data-aos="zoom-in-up" data-aos-delay="0" data-aos-duration="1000" class="gallery"></img>
         <ul id="tools" data-aos="fade-right" data-aos-delay="500" data-aos-duration="700">
             <li>DSLR Nikon D7100</li><!--DSLR Nikon D7100-->
             <li>Nikon AF-S DX Nikkor 35mm f1</li><!--DSLR Nikon D7100-->
@@ -95,16 +104,18 @@
         <!--End of active image-->
         </div>
         <div id="work-imgs">
-        <div id="work-grid">
+        <div id="work-grid" class="gallery">
         <!--**Maked for 12 images only *remember-->
             <img class="workimage" src="images/work/work-1.jpg">
             <img class="workimage" src="images/work/work-3.jpg">
             <img class="workimage" src="images/work/work-4.jpg">
             <img class="workimage" src="images/work/work-5.jpg">
+            <!--
             <img class="workimage" src="images/work/work-6.jpg">
             <img class="workimage" src="images/work/work-7.jpg">
             <img class="workimage" src="images/work/work-8.jpg">
             <img class="workimage" src="images/work/work-1.jpg">
+            -->
     <!--End work-Grid-->
        </div>
     <!--End work-imgs container-->
@@ -121,8 +132,29 @@
         <a data-aos="fade-up" data-aos-delay="0" data-aos-duration="1000" href="https://m.me/caution.bioxazard/" target="_blank" id="messenger" class="social"><i class="fab fa-facebook-messenger"></i></a>
         <a data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000" href="contact.html" target="_blank" id="form">CLICK HERE<br>IF YOU WANT SUBMIT A CONTACT FORM</a>
     </div>
+    
+    <!--Mobile Version Start-->
+    
+    <!--Mo first-->
+    <div id="mo-first">
+        <h1 id="mo-header1"><span id="your">YOUR</span><br><span id="dope">DOPE</span><br><span id="therapy">THERAPY</span></h1>
+        <h1 id="mo-header2">Photographer<br>Video Producer</h1>
+        <img id="mo-boz1" src="images/mo-boz.jpg" draggable="false" onmousedown="return false;" class="gallery">
+        <div id="tapfirst">TAP HERE TO FIND ME</div>
+    </div>
+    <!--Mo Sec-->
+    <div id="mo-sec">
+        <h1 id="mo-social-header">SOCIAL MEDIA</h1>
+        <div id="underline"></div>
+        <a  href="https://www.instagram.com/yourdopetherrapy/" target="_blank" id="mo-insta" class="mo-social"><i class="fab fa-instagram"></i></a>
+        <a  href="https://m.me/caution.bioxazard/" target="_blank" id="mo-messenger" class="mo-social"><i class="fab fa-facebook-messenger"></i></a>
+        <div id="clip1"></div>
+        <div id="clip2"></div>
 
-    <div id="cursor"></div>
+
+        
+    </div>
+</div>
 </body>
 <script type="text/javascript" src="js/jquery.js"></script>
  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -132,29 +164,80 @@
 <script type="text/javascript" src="js/index/top.js"></script>
 <script type="text/javascript" src="js/index/containers.js"></script>
 <script type="text/javascript" src="js/index/work-imgs.js"></script>
-<script type="text/javascript" src="js/index/social.js"></script>
+<script type="text/javascript" src="js/mobile/tap.js"></script>
+<script type="text/javascript" src="js/index/social.js"></script><script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>AOS.init({});</script>
+<!--
+<script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/ScrollMagic.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/plugins/debug.addIndicators.min.js"></script>
+<script type="text/javascript" src="js/mobile/scrollevents.js"></script>
+-->
 
+<script src="https://code.createjs.com/1.0.0/preloadjs.min.js"></script>
 
-<script src="https://code.createjs.com/1.0.0/createjs.min.js"></script>
 <script>
-function init() {
-    // code here.
-  }
-</script>
-<script type="text/javascript">
-var queue = new createjs.LoadQueue();
-queue.loadFile("images/work/work-1.jpg");
-queue.on("progress", function() {
-    console.log("Progress:", queue.progress, event.progress);
-});
-</script>
+//vars
+    let progress = document.getElementById('progress');
+    let all = document.getElementById('all');
 
+    var queue = new createjs.LoadQueue(false);
 
-
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-<script>
-    AOS.init({
+//progress - every time file load we have this progress event
+    queue.on("progress",event => {
+        let progress = Math.floor(event.progress * 100);
+        this.progress.style.width = progress +'%' ;
+        if (progress == 100){
+            console.log('all done');
+            document.querySelector('body').style.backround = 'white';
+        }
     });
+
+    queue.on("complete",event => {
+        all.classList.add('fadeIn');
+
+        progress.classList.add('fadeOut');
+
+
+    });
+
+//queue load files
+    queue.on("fileload", handleFileComplete);
+//work
+    /*
+    queue.loadFile('images/work/work-1.jpg');
+    queue.loadFile('images/work/work-3.jpg');
+    queue.loadFile('images/work/work-4.jpg');
+    queue.loadFile('images/work/work-5.jpg');
+    */
+    queue.loadFile({class:"workimage", src:"images/work/work-1.jpg"});
+    queue.loadFile({class:"workimage", src:"images/work/work-3.jpg"});
+    queue.loadFile({class:"workimage", src:"images/work/work-4.jpg"});
+    queue.loadFile({class:"workimage", src:"images/work/work-5.jpg"});
+
+//slider
+    /*
+    queue.loadFile('images/pic1.jpg');
+    queue.loadFile('images/pic1.jpg');
+    queue.loadFile('images/pic3.jpg');*/
+
+    queue.loadFile({id:"pic1", src:"https://lh3.googleusercontent.com/l8gHbXV9XrqNFgkiAMUiXrWoyBI9MTysM9wZVNT35kXqvbw1mRscKq8u_WWR3cOZXphQ7IRIj2x7UWzQepVsrkaF6NHT9I1vbQOMWeMfdxUA7gIeTJoUGPZNdayXUP0uDIStcIm7lQ1SA8n-Nete4zqb-gFjWa8dll8rhXtv1d8tJNogTin-konDHksSKPOKH_NEyAT-NIeNF-ls6UVlfVn85gDh8aLicpEp_M0Ybj_--lGXpSx9gv2AP4uQFmtneEDuIQrpftdPYGLEoo5Gj-iBvdDIRZ_RD1NRrJExKfyXv0gYLoGyHjfAt90byNbJbbPxpUT2U_AGyWni2IeFLKAAkDCrgB4caOlgxHdX5mGpjAnD4RjbZMqBgJ49DTpMC6Rsty7xPyf_VNR-r-blNPLS83XW5g_whhZBWUCpUv27gDBEsmgF2S5FY_Ua_rHOyssHSAJjA2jBZ4TSch9QbnPXa-n3JYYt7gs_alwoiY8gDxR2i8NRaxU9tDWdQ5jLD0tXmpKj579m4Cad2EH6i5_S9OPdTA1rYFSgNPpi4zteiGKmdTLXnPm7yEDmEAC4ElsPgAJWf7CBQsKWAnLEZTX2nDeBPlOuOvMmPa0VySTWm7etw-tPzNWT1ChhZhQmRlU-sYtXulQ9KnBrMsIuZijGECwWBg=w1147-h764-no"});
+    queue.loadFile({id:"pic2", src:"https://lh3.googleusercontent.com/Vel3mS7DbYZ9TwElLbDEfUys4crJ10ti56BrkbsJpb2j9t4aIdBkwKCgmrEh682QtRI84RUOeKpUP9qHROvlIbzWllyr04pS5gBnlpvEjwK2PK4tn8dYMO8Vqm_K4Vl1RpgkowYWTihyvaMzFxguKFTXILiRNxM2-KYJIPm0Vnqu0BDFREJRysTKzw-2SwiKx_1z8nVihicPdF8JFqeIYgcGeqfCdBp8cavrBqBs-JwzbJV23w_TkI1BDNDm-2sawtA064DzRjeWqnEgWUeMiZP5eYwdrmPvdC5Peo5DzArxR1FTg8jUwzTpNNIjAmceM50aCt6FP4bxfycnVmFkE7RFtj2EUszadBFBh0vbmpEcVdxbUsQkrPhztpSNkj7A1jAkXMDH93neYaVvXwjqSBosVexpc_SPNGcGmpumeMpLIEqQzOWButR8Df7bLJQDpJSt_gtCymbvv8b-NCYNPromwi24azeJkP61_4WpJ7JWBqkDBHzjgbsN1g8yBldjPvX2EPSF-Bt_xLyZRi6DU04md3RzDIPn9K0hAdPFm5_RyN9eBNEqyJ2Ss478v7jjlI8T0xVG5MYfJKvoo4so2vQMJVFy4aOPvHAU8QXW1gvVkWhKQF3KydTQTYg8dwNAiG_PQqpScwRuP6_lUKPU083Z7RlC7w=w1147-h764-no"});
+    queue.loadFile({id:"pic3", src:"https://lh3.googleusercontent.com/Xkv2aaofq66nu-4KKunDcbTQn7dqcUka7E82Qb-UpDS2Be35z2_bi0mmfMoTdfx59lc0bwnaGgHf2lZ70644aSRECVnq59lFpSGkbFuyNc3lVJ8jR4GumKEaA4ALWBGlTtZT-yQQsqkT7iK5J8zsHuuqTyMIOfAQfjkblZztH0YfBnwHpT4VlYkgLf4tYdyv6ernFe29UGQ4ufo44nxWmE_S-zzVfVHCbN5SzuZxr55cmmtzuOLLrmjg_riaSMQJM0hm50qsNmMEyHWTNoYj1JCdlP8-wGSOHMfwt0pmWmMTcoKG9vtWUj8vff2QFQZCpzfUJgXJhsyUURARb5PxeJB-BvM0w-Uz0muatbugOq5DUJvRLGHEvRXG_0KgnMEP51UKtiyAM1H0q4r_pabUsjiW0UW29rC0hb1HkFyFPoag6EkOfrf_keQdrs_RncyzWZrf5W88YMowt_IW6MKlzZbs4AKW7zeGgX52mk7ZbLVSN7nVbzEE21GM_AWSHukXKIiR_wxgSeex08rIdrBHYsUHYGgzbrRizy2r0URJXZ4Y01jkL69rYN0TX1vjjx9z9M0HVOyZ6QO_dvQA6vRomqllysf_Bb4PNquiso5gpqd5Dmwxj1LX__RYRUeJ-OtdD8kOsLv-Q2VJirmHzK1QvlJRU4Yoaw=w1147-h764-no"});
+//boz
+queue.loadFile('images/boz2.jpg');
+
+//bozmobile
+queue.loadFile('images/mo-boz.jpg');
+
+
+//function that pass event
+    function handleFileComplete(event) {
+
+        var item = event.item;
+        var type = item.type;
+
+
+    }
 </script>
 
 
