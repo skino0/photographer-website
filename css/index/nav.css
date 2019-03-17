@@ -13,9 +13,10 @@
     text-shadow:-0.5px -0.5px 0px #000,
     0.5px 0.5px 0px #000;
     transition-duration:.5s;
-    padding:50px 10px 10px 10px;
+    padding:10px 10px 10px 10px!important;
     user-select:none!important;-webkit-user-select:none!important;-moz-user-select:none!important;-o-user-select:none!important;-ms-user-select:none!important;
-    opacity:0;
+}
+.navstart {
     animation-delay:1.5s!important;
     animation:navjoin .5s forwards;
     -webkit-animation-delay:1.5s!important;
@@ -78,10 +79,9 @@
 
 #aboutme:hover,#work:hover,#contact:hover {
     cursor:pointer;
-    transition-duration:.4s;
+    transition-duration:.3s;
     letter-spacing:3.2px;
     background-color:rgba(0,0,0,.55);
-    padding:8px 15px 8px 15px;
 }
 
 #aboutme{
