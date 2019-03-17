@@ -5,11 +5,17 @@ let slideshow_container = document.getElementById('slideshow-container');
 let header1 = document.getElementById('header1');
 let workheader = document.getElementById('workheader');
 let header2 = document.getElementById('header2');
-let navbar = document.getElementById('navbarstart');
+let navbar = document.getElementById('navbar');
 let aboutme = document.getElementById('aboutme');
 let work = document.getElementById('work');
 let contact = document.getElementById('contact');
-
+let mo_first = document.getElementById('mo-first');
+let mo_boz1 = document.getElementById('mo-boz1');
+let your = document.getElementById('your');
+let dope = document.getElementById('dope');
+let therapy = document.getElementById('therapy');
+let mo_header2 = document.getElementById('mo-header2');
+let tapfirst = document.getElementById('tapfirst');
 
 
 var queue = new createjs.LoadQueue(false);
@@ -38,6 +44,13 @@ queue.on("complete",event => {
     aboutme.classList.add('navstart');
     work.classList.add('navstart');
     contact.classList.add('navstart');
+    mo_first.classList.add('mo-firststart');
+    mo_boz1.classList.add('moboz1start');
+    your.classList.add('yourstart');
+    dope.classList.add('dopestart');
+    therapy.classList.add('therapystart');
+    mo_header2.classList.add('moheader2start');
+    tapfirst.classList.add('tapstart');
 
 });
 
@@ -54,11 +67,17 @@ queue.loadFile('images/work/work-5.jpg');
 /*images/work/work-1.jpg*/
 queue.loadFile({class:"workimage", src:"images/work/work-1.jpg"});
 /*images/work/work-3.jpg*/
-queue.loadFile({class:"workimage", src:"images/work/work-3.jpg"});
+queue.loadFile({class:"workimage", src:"images/work/work-2.jpg"});
 /*images/work/work-4.jpg*/
-queue.loadFile({class:"workimage", src:"images/work/work-4.jpg"});
+queue.loadFile({class:"workimage", src:"images/work/work-3.jpg"});
 /*images/work/work-5.jpg*/
+queue.loadFile({class:"workimage", src:"images/work/work-4.jpg"});
+
 queue.loadFile({class:"workimage", src:"images/work/work-5.jpg"});
+queue.loadFile({class:"workimage", src:"images/work/work-6.jpg"});
+queue.loadFile({class:"workimage", src:"images/work/work-7.jpg"});
+queue.loadFile({class:"workimage", src:"images/work/work-8.jpg"});
+
 
 //slider
 /*

@@ -12,6 +12,8 @@
     -webkit-clip-path: polygon(0 50%, 100% 50%, 100% 50%, 0 50%);
     clip-path: polygon(0 50%, 100% 50%, 100% 50%, 0 50%);
     user-select:none;-webkit-user-select:none;-moz-user-select:none;-o-user-select:none;-ms-user-select:none;
+}
+#mo-first.mo-firststart{
     animation:mo-first .7s forwards;
     -webkit-animation:mo-first .7s forwards;
     -moz-animation:mo-first .7s forwards;
@@ -43,10 +45,15 @@
 #mo-boz1 {
     position:absolute;
     width:100vw;
-    height:70%;
+    height:55%;
     top:50%;
     transform:translateY(-50%);
     z-index:-1;
+    opacity:0;
+}
+
+#mo-boz1.moboz1start{
+    opacity:1;
     animation:boz 20s infinite;
     -webkit-animation:boz 20s infinite;
     -moz-animation:boz 20s infinite;
@@ -95,9 +102,9 @@
 #mo-header1 {
     position:absolute;
     color:#fff;
-    top:50%;
+    top:40%;
     left:2%;
-    transform:translateY(-50%);
+    transform:translateY(-40%);
     font-size:40px;
     font-family: 'Montserrat', sans-serif;
     line-height:42px;
@@ -108,9 +115,9 @@
 #mo-header2 {
     position:absolute;
     color:#fff;
-    top:70%;
+    top:60%;
     left:2%;
-    transform:translateY(-70%);
+    transform:translateY(-60%);
     font-size:17px;
     font-family: 'Montserrat', sans-serif;
     line-height:25px;
@@ -120,6 +127,8 @@
     /*join anim after header*/
     opacity:0;
     filter:blur(40px);
+}
+#mo-header2.moheader2start{
     animation-delay:1.5s!important;
     animation:moheaderjoin2 .2s forwards;
     -webkit-animation-delay:1.5s!important;
@@ -156,19 +165,42 @@
 #tapfirst {
     position:absolute;
     color:#ccc;
-    bottom:4%;
+    bottom:-40%;
     left:50%;
-    transform:translate(-50%,4%);
+    transform:translate(-50%,-40%);
     font-family: 'Poppins', sans-serif;
     font-size:17px;
     width:100%;
     text-align:center;
     letter-spacing:2.5px;
     user-select:none;-webkit-user-select:none;-moz-user-select:none;-o-user-select:none;-ms-user-select:none;
+    opacity:0;
+}
+
+#tapfirst.tapstart {
+    animation-delay:.4s!important;
+    animation:tapfirst 1s forwards;
+
+}
+
+@keyframes tapfirst {
+    0%{
+        bottom:-40%;
+        left:50%;
+        transform:translate(-50%,-40%);
+        opacity:0;
+    }
+
+    100%{
+        bottom:12%;
+        left:50%;
+        transform:translate(-50%,12%);
+        opacity:1;
+    }
 }
 
 /*header join's*/
-#your,#dope,#therapy {
+#your.yourstart,#dope.dopestart,#therapy.therapystart {
     margin:-100%;
     animation:moheaderjoin .4s forwards;
     -webkit-animation:moheaderjoin .4s forwards;

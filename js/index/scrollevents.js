@@ -5,6 +5,9 @@ var controller = new ScrollMagic.Controller();
         triggerElement: '#about-container',
     })
     .setClassToggle('#about-container','activeabout')
+    .setClassToggle('#story-about','test')
+    .setClassToggle('#boz','test')
+
     .addTo(controller);
     var bozscene = new ScrollMagic.Scene({
         triggerElement: '#boz'

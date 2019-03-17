@@ -36,11 +36,11 @@
 /*CONTAINER of work imgs*/
 #work-imgs {
     position:absolute;
-    top:80%;
+    top:50%;
     left:50%;
-    transform:translate(-50%,-80%);
+    transform:translate(-50%,-50%);
     width:90%;
-    height:80%;
+    padding:50px;
     z-index:-1;
     opacity:1;
     animation:imgsvisible .3s forwards;
@@ -220,6 +220,7 @@
     opacity:.8!important;
     transform:scale(1.3)!important;
     z-index:2!important;
+    
 }
 
 .workimage.active-img {
@@ -287,6 +288,27 @@
     color:#fff;
     transform:scale(1.2);
 }
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
 
+#insta-work {
+    position:absolute;
+    bottom:15%;
+    left:50%;
+    transform:translate(-50%,15%);
+    font-size:20px;
+    width:100%;
+    text-align:center;
+    color: #ccc;
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing:6.5px;
+    text-decoration:none;
+    transition-duration:.8s;
+}
 
-
+#insta-work:hover {
+    transition-duration:.3s;
+    text-align:center;
+    color: #ccc;
+    letter-spacing:4px;
+    cursor:pointer;
+}
