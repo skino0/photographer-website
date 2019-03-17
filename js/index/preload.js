@@ -36,6 +36,7 @@ queue.on("complete",event => {
     //all fadein
     all.classList.add('fadeIn');
     //container-one elements
+    //general desktop
     slideshow_container.classList.add('start');
     header1.classList.add('headerstart');
     workheader.classList.add('workheaderstart');
@@ -44,6 +45,7 @@ queue.on("complete",event => {
     aboutme.classList.add('navstart');
     work.classList.add('navstart');
     contact.classList.add('navstart');
+    //mobile
     mo_first.classList.add('mo-firststart');
     mo_boz1.classList.add('moboz1start');
     your.classList.add('yourstart');
