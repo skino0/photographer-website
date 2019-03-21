@@ -210,6 +210,7 @@
 
 }
 #your {
+    margin:-100%;
     animation-delay:.7s!important;
     -webkit-animation-delay:.7s!important;
     -moz-animation-delay:.7s!important;
@@ -218,6 +219,7 @@
 
 }
 #dope {
+    margin:-100%;
     animation-delay:.9s!important;
     -webkit-animation-delay:.9s!important;
     -moz-animation-delay:.9s!important;
@@ -226,6 +228,7 @@
 
 }
 #therapy {
+    margin:-100%;
     animation-delay:1.2s!important;
     -webkit-animation-delay:1.2s!important;
     -moz-animation-delay:1.2s!important;

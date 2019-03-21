@@ -7,99 +7,120 @@
         top:100%;
         height:100vh;
         width:100vw;
-        background:#1d1d1d;
-        z-index:1;
+        background: rgb(165,165,165); /* Old browsers */
+        background: -moz-linear-gradient(top, rgba(165,165,165,1) 0%, rgba(218,218,218,1) 50%, rgba(165,165,165,1) 100%); /* FF3.6-15 */
+        background: -webkit-linear-gradient(top, rgba(165,165,165,1) 0%,rgba(218,218,218,1) 50%,rgba(165,165,165,1) 100%); /* Chrome10-25,Safari5.1-6 */
+        background: linear-gradient(to bottom, rgba(165,165,165,1) 0%,rgba(218,218,218,1) 50%,rgba(165,165,165,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a5a5a5', endColorstr='#a5a5a5',GradientType=0 );
+        z-index:-1;
     }
 
-    /*mobiel social media*/
-    /*little bit copy of desktop version*/
-    .mo-social {
-        font-size:30px;
-        color:rgb(37, 37, 37);
-        transition-duration:.4s;
-        color:rgb(100, 100, 100);
-        z-index:10!important;
-    }
-    
-    .mo-social:hover {
-        cursor:pointer;
-        transition-duration:.4s;
-        color:rgb(37, 37, 37);
-        transition-duration:.4s;
-    }
-    
+/*social container*/
+    #mosocial-container {
+        position:absolute;
+        top:50%;
+        left:50%;
+        transform:translate(-50%,-50%);
+        border:2px rgba(117, 117, 117, 0.5) solid;
+        background: rgb(117,117,117); /* Old browsers */
+        background: -moz-linear-gradient(left, rgba(117,117,117,.3) 0%, rgba(255,255,255,0) 25%, rgba(255,255,255,0) 75%, rgba(117,117,117,.3) 99%); /* FF3.6-15 */
+        background: -webkit-linear-gradient(left, rgba(117,117,117,.3) 0%,rgba(255,255,255,0) 25%,rgba(255,255,255,0) 75%,rgba(117,117,117,.3) 99%); /* Chrome10-25,Safari5.1-6 */
+        background: linear-gradient(to right, rgba(117,117,117,.3) 0%,rgba(255,255,255,0) 25%,rgba(255,255,255,0) 75%,rgba(117,117,117,.3) 99%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#757575', endColorstr='#757575',GradientType=1 );
+        width:90%;
+        height:180px;
+        border-radius:25px;
+        font-size:34px;
+        z-index:0;
+    }   
+
+/*icon styles*/
     #mo-insta {
         position:absolute;
         top:50%;
         left:30%;
-        transform:translateX(-30%);
+        transform:translate(-30%,-50%);
         z-index:2;
-        transition-duration:.32;
-        color: transparent;
-        background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
-        background: -webkit-radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
-        background-clip: text;
-        -webkit-background-clip: text;
     }
-    
-    
-    
+
     #mo-messenger {
         position:absolute;
         top:50%;
         right:30%;
-        transform:translateX(30%);
-        z-index:2;
+        transform:translate(30%,-50%);
         color: #0078ff;
-
-    }
-    
-
-    @import url('https://fonts.googleapis.com/css?family=Montserrat');
-
-    /*header social media*/
-    #mo-social-header {
-        position:absolute;
-        top:27%;
-        left:50%;
-        transform:translate(-50%,-27%);
-        color:#fff;
-        font-family: 'Montserrat', sans-serif;
-        text-shadow:-1px 0px 1px #000;
-        font-size:20px;
-        width:100%;
-        text-align:center;
-        font-weight:700;
-        letter-spacing:2.7px;
+        z-index:2;
     }
 
-    #underline {
+    .icons {
+        width:40px;
+        height:40px;
+        
+    }
+/*left right clips*/
+
+    #clip1,#clip2 {
         position:absolute;
-        top:35%;
-        left:50%;
-        transform:translate(-50%,-35%);
-        width:140px;
-        height:1px;
-        background:rgba(224, 224, 224,.7);
+        background-color:rgba(0,0,0,.8);
+        width:20px;
+        height:100px;
+        z-index:1;
     }
 
     #clip1 {
-        position:absolute;
-        top:0%;
-        width:100%;
-        height:140px;
-        -webkit-clip-path: polygon(0 0, 100% 0, 100% 15%, 0 40%);
-        clip-path: polygon(0 0, 100% 0, 100% 15%, 0 40%);
-        background: #2e2e2e;
+        top:50%;
+        transform:translateY(-50%);
+        left:0%;
+
     }
-    #clip2{
-        position:absolute;
-        bottom:0%;
-        width:100%;
-        height:140px;
-        -webkit-clip-path: polygon(0 100%, 100% 100%, 100% 60%, 0 85%);
-        clip-path: polygon(0 100%, 100% 100%, 100% 60%, 0 85%);
-        background: #2e2e2e;
+
+    #clip2 {
+        top:50%;
+        transform:translateY(-50%);
+        right:0%;
     }
+    /*so header*/
+    #mosocial-container h1 {
+        position:absolute;
+        color:rgb(0,0,0);
+        font-size:22px;
+        top:10%;
+        left:50%;
+        transform:translate(-50%,-10%);
+        width:100%;
+        text-align:center;
+        font-family: 'Montserrat', sans-serif;
+        letter-spacing:2px;
+        font-weight:700;
+    }
+
+    #mo-sec h2 {
+        position:absolute;
+        color:#000;
+        font-size:13px;
+        bottom:10%;
+        left:50%;
+        transform:translate(-50%,10%);
+        width:90%;
+        text-align:center;
+        font-family: 'Montserrat', sans-serif;
+        letter-spacing:3px;
+        line-height:20px;
+    }
+
+/*mo footer*/
+#mo-footer {
+    position:absolute;
+    color:#fff;
+    z-index:3;
+    background-color:rgba(0,0,0,.4);
+    width:100%;
+    text-align:center;
+    bottom:0%;
+    font-size:13px;
+    padding:5px 0px 5px 0px;
+    font-family: 'Montserrat', sans-serif;
+
+}
 
 }

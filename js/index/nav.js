@@ -14,9 +14,7 @@ $(document).on('scroll', function(){
         $("#work").attr('id','wo').attr('class','active');
         $("#contact").attr('id','co').attr('class','active');
     }else {
-        $("#about").attr('id','aboutme').removeClass('active');
-        $("#wo").attr('id','work').removeClass('active');
-        $("#co").attr('id','contact').removeClass('active');
+        //nothing
     }
  });
 

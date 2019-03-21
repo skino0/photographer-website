@@ -16,6 +16,7 @@ let dope = document.getElementById('dope');
 let therapy = document.getElementById('therapy');
 let mo_header2 = document.getElementById('mo-header2');
 let tapfirst = document.getElementById('tapfirst');
+let icons = document.getElementsByClassName('icons');
 
 
 var queue = new createjs.LoadQueue(false);
@@ -58,13 +59,6 @@ queue.on("complete",event => {
 
 //queue load files
 queue.on("fileload", handleFileComplete);
-//work
-/*
-queue.loadFile('images/work/work-1.jpg');
-queue.loadFile('images/work/work-3.jpg');
-queue.loadFile('images/work/work-4.jpg');
-queue.loadFile('images/work/work-5.jpg');
-*/  
 
 /*images/work/work-1.jpg*/
 queue.loadFile({class:"workimage", src:"images/work/work-1.jpg"});
@@ -74,7 +68,6 @@ queue.loadFile({class:"workimage", src:"images/work/work-2.jpg"});
 queue.loadFile({class:"workimage", src:"images/work/work-3.jpg"});
 /*images/work/work-5.jpg*/
 queue.loadFile({class:"workimage", src:"images/work/work-4.jpg"});
-
 queue.loadFile({class:"workimage", src:"images/work/work-5.jpg"});
 queue.loadFile({class:"workimage", src:"images/work/work-6.jpg"});
 queue.loadFile({class:"workimage", src:"images/work/work-7.jpg"});
@@ -97,6 +90,12 @@ queue.loadFile({id:"boz", src:"images/boz2.jpg"});
 
 /*images/mo-boz.jpg*/
 queue.loadFile({id:"mo-boz1", src:"images/mo-boz.jpg"});
+
+//mobile-social
+
+queue.loadFile({class:"icons", src:"images/mobile-social/insta.png"});
+queue.loadFile({class:"icons", src:"images/mobile-social/insta.png"});
+
 
 //js files
 queue.loadFile('js/jquery.js');

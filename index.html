@@ -81,7 +81,7 @@
         </div>
         <!--images/boz2.jpg-->
         <img id="boz" src="https://lh3.googleusercontent.com/p8527OMSvrrpBesP3S1zVy3oROldawT6xY0wGMAVP_gpWbwhxw9qIqgvAYvlmMxJemx0MowJHLXL6jciLwt_nD4d13baJitl6G2vDWGkDzQJJ-eIdhz3kzuibbqybn5uGtUrvyTHEZcwjL79ZuCOBvdGz6hNMDtctjuQ8YcdCKBt0LtcLiBgpkp4-mIBbk3B19ePR8iQZ8E1JMlw33hCyJo8UF60vuDejPIgTqqY9lXa5lRGpgO9CoZRb4I9ll3tjjPblajUOEWgDInmad5627LtN0xlq7DMhmHwk5L1hjUwae8J10kzOOFIXvqHzr9rtfb_UrAikEQmPcFFtQvvo6N6Alg-3yIRxpZvDAMbHzldLSIe4m3zPVKbtN4lW6G8VpNUCrOAhPuKqnBGWIsv4zuoFVSr2QxSvsapVPXxdLlpf5lQMdHvUoXMWMpbbnGNkViHeCssBDpAzLegsmUo4Qj1rEnIFmkNdLhdEwlaZymjxPy1kLXyIWfifWTXpYMrOCfjdnPxH76k3CMsPgNeedplaWbT4_Pg-sBN0ZWT_oAIlneUs0BtmkgwXZf1AJpTtq5oZq_YqNoHBPNjQ8fMmxi8bGOC0zaa0QtCzuhwJhKMzcBMgszerUGe5ThYlT9_BWzpV74m8IoqH9rRJHTH2tc7RODE3g=w630-h944-no" draggable="false" onmousedown="return false;"
-        data-aos="zoom-in-up" data-aos-delay="0" data-aos-duration="1000" class="gallery"></img>
+        data-aos="zoom-in-up" data-aos-delay="0" data-aos-duration="1000" class="gallery">
 
 
         <ul id="tools" data-aos="fade-right" data-aos-delay="500" data-aos-duration="700">
@@ -138,10 +138,13 @@
         <h1 id="contact-header" data-aos="fade-up" data-aos-delay="0" data-aos-duration="1000">CONTACT</h1>
         <h1 id="so-header" data-aos="fade-up" data-aos-delay="0" data-aos-duration="1000">MEDIA</h1>
         <a data-aos="fade-up" data-aos-delay="0" data-aos-duration="800" href="https://www.instagram.com/yourdopetherrapy/" target="_blank" id="insta" class="social"><i class="fab fa-instagram"></i></a>
-        <a data-aos="fade-up" data-aos-delay="0" data-aos-duration="800"id="whatsapp" class="social"><i class="fab fa-whatsapp"></i></a>
+        <div data-aos="fade-up" data-aos-delay="0" data-aos-duration="800" id="whatsapp" class="social"><i class="fab fa-whatsapp"></i></div>
         <p id="tel">+306988601904</p>
         <a data-aos="fade-up" data-aos-delay="0" data-aos-duration="1000" href="https://m.me/caution.bioxazard/" target="_blank" id="messenger" class="social"><i class="fab fa-facebook-messenger"></i></a>
         <a data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000" href="contact.html" target="_blank" id="form">CLICK HERE<br>IF YOU WANT SUBMIT A CONTACT FORM</a>
+        
+        <!--dont forget .php when finish the project-->
+        <div id="de-footer">YDT - <i class="far fa-copyright"></i> Copyright <?php echo date("Y"); ?></div>
     </div>
     
     <!--Mobile Version Start-->
@@ -151,24 +154,29 @@
         <h1 id="mo-header1"><span id="your">YOUR</span><br><span id="dope">DOPE</span><br><span id="therapy">THERAPY</span></h1>
         <h1 id="mo-header2">Photographer<br>Video Producer</h1>
         <img id="mo-boz1" src="images/mo-boz.jpg" draggable="false" onmousedown="return false;" class="gallery">
-        <div id="tapfirst">TAP HERE TO FIND ME</div>
+        <div id="tapfirst">SCROLL DOWN TO FIND ME</div>
     </div>
     <!--Mo Sec-->
     <div id="mo-sec">
-        <h1 id="mo-social-header">SOCIAL MEDIA</h1>
-        <div id="underline"></div>
-        <a  href="https://www.instagram.com/yourdopetherrapy/" target="_blank" id="mo-insta" class="mo-social"><i class="fab fa-instagram"></i></a>
-        <a  href="https://m.me/caution.bioxazard/" target="_blank" id="mo-messenger" class="mo-social"><i class="fab fa-facebook-messenger"></i></a>
-        <div id="clip1"></div>
-        <div id="clip2"></div>
+<!--mo social container-->
+    <div id="mosocial-container">
+            <h1>SOCIAL MEDIA</h1>
+            <a href="https://www.instagram.com/yourdopetherrapy/" target="_blank" id="mo-insta"><img class="icons" src="images/mobile-social/insta.png"></a>
+            <a href="https://m.me/caution.bioxazard/" target="_blank" id="mo-messenger"><img class="icons" src="images/mobile-social/mess.png"></a>
+    </div>
+    <!--clips-->
+    <div id="clip1"></div>
+    <div id="clip2"></div>
+    
+    <h2>For better experience visit check<br>Desktop version</h2>
+    <!--dont forget .php when finish the project-->
+    <div id="mo-footer">YDT - <i class="far fa-copyright"></i> Copyright <?php echo date("Y"); ?></div>
 
-
-        
     </div>
 </div>
 </body>
 <script src="https://code.createjs.com/1.0.0/preloadjs.min.js"></script>
-<script type="text/javascript" src="js/index/preload.js"></script>
+<script type="text/javascript" src="preload.js"></script>
 <script type="text/javascript" src="js/jquery.js"></script>
  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script type="text/javascript" src="js/index/index.js"></script>
